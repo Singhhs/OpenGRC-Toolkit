@@ -2,7 +2,7 @@
 
 This section contains step-by-step operational procedures that implement the requirements defined in policies.
 
-## Available Procedures (7)
+## Available Procedures (12)
 
 ### Access Management
 
@@ -24,12 +24,44 @@ This section contains step-by-step operational procedures that implement the req
 |-----------|----------------|--------|
 | [Change Management Procedure](./change-management-procedure.md) | [Change Management Policy](../policies/change-management-policy.md) | Available |
 | [Backup and Recovery Procedure](./backup-procedure.md) | [Backup Policy](../policies/backup-policy.md) | Available |
+| [Patch Management Procedure](./patch-management-procedure.md) | [Vulnerability Management Policy](../policies/vulnerability-management-policy.md) | **NEW** |
+
+### Third Party & Vendor
+
+| Procedure | Related Policy | Status |
+|-----------|----------------|--------|
+| [Vendor Security Assessment Procedure](./vendor-security-assessment-procedure.md) | [Supplier Security Policy](../policies/supplier-security-policy.md) | **NEW** |
+
+### Business Continuity
+
+| Procedure | Related Policy | Status |
+|-----------|----------------|--------|
+| [Disaster Recovery Procedure](./disaster-recovery-procedure.md) | [Business Continuity Policy](../policies/business-continuity-policy.md) | **NEW** |
+
+### Data Protection
+
+| Procedure | Related Policy | Status |
+|-----------|----------------|--------|
+| [Data Subject Request Procedure](./data-subject-request-procedure.md) | [Data Protection Policy](../policies/data-protection-policy.md) | **NEW** |
 
 ### ISMS Operations
 
 | Procedure | Related Policy | Status |
 |-----------|----------------|--------|
 | [Internal Audit Procedure](./internal-audit-procedure.md) | [Information Security Policy](../policies/information-security-policy.md) | Available |
+| [Security Awareness Procedure](./security-awareness-procedure.md) | [Information Security Policy](../policies/information-security-policy.md) | **NEW** |
+
+### ISO 27001 Specific Procedures
+
+Additional procedures in `/frameworks/iso-27001/procedures/`:
+
+| Procedure | ISO Clause | Status |
+|-----------|------------|--------|
+| [Document Control Procedure](../frameworks/iso-27001/procedures/document-control-procedure.md) | 7.5 | Available |
+| [Internal Audit Program](../frameworks/iso-27001/procedures/internal-audit-program.md) | 9.2 | Available |
+| [Management Review Procedure](../frameworks/iso-27001/procedures/management-review-procedure.md) | 9.3 | Available |
+| [Corrective Action Procedure](../frameworks/iso-27001/procedures/corrective-action-procedure.md) | 10.1, 10.2 | Available |
+| [Risk Treatment Procedure](../frameworks/iso-27001/procedures/risk-treatment-procedure.md) | 6.1.3 | **NEW** |
 
 ---
 
@@ -55,8 +87,6 @@ This section contains step-by-step operational procedures that implement the req
 
 | Procedure | Related Policy | Priority |
 |-----------|----------------|----------|
-| Data Backup Procedure | Backup Policy | High |
-| Data Recovery Procedure | Backup Policy | High |
 | Data Disposal Procedure | Data Classification Policy | Medium |
 | Data Handling Procedure | Data Classification Policy | Medium |
 
@@ -64,17 +94,8 @@ This section contains step-by-step operational procedures that implement the req
 
 | Procedure | Related Policy | Priority |
 |-----------|----------------|----------|
-| Change Management Procedure | Change Management Policy | High |
-| Patch Management Procedure | Vulnerability Management Policy | High |
 | Vulnerability Scanning Procedure | Vulnerability Management Policy | Medium |
 | Configuration Management Procedure | Change Management Policy | Medium |
-
-### Third Party & Vendor
-
-| Procedure | Related Policy | Priority |
-|-----------|----------------|----------|
-| Vendor Security Assessment Procedure | Supplier Security Policy | High |
-| Vendor Onboarding Procedure | Supplier Security Policy | Medium |
 
 ### Physical Security
 
@@ -83,23 +104,10 @@ This section contains step-by-step operational procedures that implement the req
 | Visitor Management Procedure | Physical Security Policy | Medium |
 | Equipment Disposal Procedure | Physical Security Policy | Medium |
 
-### ISMS Operations
-
-| Procedure | Related Policy | Priority |
-|-----------|----------------|----------|
-| Internal Audit Procedure | Information Security Policy | High |
-| Management Review Procedure | Information Security Policy | High |
-| Corrective Action Procedure | Information Security Policy | High |
-| Document Control Procedure | Information Security Policy | Medium |
-| Risk Assessment Procedure | Information Security Policy | High |
-| Risk Treatment Procedure | Information Security Policy | High |
-| Security Awareness Procedure | Information Security Policy | Medium |
-
 ### Business Continuity
 
 | Procedure | Related Policy | Priority |
 |-----------|----------------|----------|
-| Disaster Recovery Procedure | Business Continuity Policy | High |
 | Business Continuity Testing Procedure | Business Continuity Policy | Medium |
 
 ### Cryptography

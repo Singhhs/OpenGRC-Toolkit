@@ -12,6 +12,7 @@ Procedures supporting ISO 27001 ISMS compliance, organized by clause.
 | [Internal Audit Program](./internal-audit-program.md) | 9.2 | Available |
 | [Management Review Procedure](./management-review-procedure.md) | 9.3 | Available |
 | [Corrective Action Procedure](./corrective-action-procedure.md) | 10.1, 10.2 | Available |
+| [Risk Treatment Procedure](./risk-treatment-procedure.md) | 6.1.3 | Available |
 
 ### General Procedures (in /procedures/)
 
@@ -35,7 +36,7 @@ Procedures supporting ISO 27001 ISMS compliance, organized by clause.
 | Procedure | Supports | Status |
 |-----------|----------|--------|
 | [Risk Assessment Methodology](../../../risk-assessment/methodologies/risk-assessment-methodology.md) | 6.1.2 | Available |
-| Risk Treatment Procedure | 6.1.3 | Planned |
+| [Risk Treatment Procedure](./risk-treatment-procedure.md) | 6.1.3 | Available |
 
 ### Clause 7 - Support
 
@@ -70,13 +71,23 @@ Procedures supporting ISO 27001 ISMS compliance, organized by clause.
 
 ---
 
+### Additional General Procedures (in /procedures/)
+
+| Procedure | Supports | Status |
+|-----------|----------|--------|
+| [Patch Management Procedure](../../../procedures/patch-management-procedure.md) | A.8.8 | Available |
+| [Vendor Security Assessment Procedure](../../../procedures/vendor-security-assessment-procedure.md) | A.5.19-23 | Available |
+| [Disaster Recovery Procedure](../../../procedures/disaster-recovery-procedure.md) | A.5.29-30 | Available |
+| [Data Subject Request Procedure](../../../procedures/data-subject-request-procedure.md) | A.5.34 | Available |
+| [Security Awareness Procedure](../../../procedures/security-awareness-procedure.md) | A.6.3 | Available |
+
+---
+
 ## Planned Procedures (To Do)
 
 | Procedure | ISO Clause | Priority |
 |-----------|------------|----------|
-| Risk Treatment Procedure | 6.1.3 | Medium |
 | Competence Management Procedure | 7.2 | Medium |
-| Awareness Training Procedure | 7.3 | Medium |
 | Continual Improvement Procedure | 10.2 | Low |
 
 ---

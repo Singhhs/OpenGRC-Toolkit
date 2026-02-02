@@ -10,10 +10,10 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 
 | Metric | Count |
 |--------|-------|
-| **Total Documents** | **75** |
+| **Total Documents** | **86** |
 | Policies | 21 |
-| Procedures | 7 + 4 ISO-specific |
-| Checklists | 5 |
+| Procedures | 12 + 5 ISO-specific |
+| Checklists | 10 |
 | Playbooks | 5 |
 | Templates | 11 |
 | Risk Assessment | 5 |
@@ -29,9 +29,9 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 |----------|-------------|--------|
 | [Frameworks](./frameworks/README.md) | Framework-specific guides and mappings | ISO 27001 active |
 | [Policies](./policies/README.md) | Ready-to-customize security policy templates | **21 policies (complete)** |
-| [Procedures](./procedures/README.md) | Step-by-step operational procedures | 7 procedures |
+| [Procedures](./procedures/README.md) | Step-by-step operational procedures | **17 procedures** |
 | [Risk Assessment](./risk-assessment/README.md) | Risk assessment templates and methodologies | Available |
-| [Checklists](./checklists/README.md) | Audit and implementation checklists | 5 checklists |
+| [Checklists](./checklists/README.md) | Audit and implementation checklists | **10 checklists** |
 | [Crisis Management](./crisis-management/README.md) | Incident response playbooks and crisis templates | 5 playbooks |
 | [Templates](./templates/README.md) | General-purpose document templates | 6 templates |
 | [Tools](./tools/README.md) | Scripts and utilities for security operations | Planned |
@@ -93,9 +93,14 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 - [Backup and Recovery Procedure](./procedures/backup-procedure.md)
 - [Internal Audit Procedure](./procedures/internal-audit-procedure.md)
 
-### Checklists (5)
+### Checklists (10)
 - [ISO 27001 Implementation Checklist](./checklists/iso27001-implementation-checklist.md)
 - [ISO 27001 Internal Audit Checklist](./checklists/iso27001-audit-checklist.md)
+- [Pre-Certification Readiness Checklist](./checklists/pre-certification-checklist.md) *(new)*
+- [Vendor Security Assessment Checklist](./checklists/vendor-security-checklist.md) *(new)*
+- [Cloud Security Checklist](./checklists/cloud-security-checklist.md) *(new)*
+- [Server Hardening Checklist](./checklists/server-hardening-checklist.md) *(new)*
+- [Network Security Checklist](./checklists/network-security-checklist.md) *(new)*
 - [Security Baseline Checklist](./checklists/security-baseline-checklist.md)
 - [New Employee Onboarding Checklist](./checklists/new-employee-checklist.md)
 - [Offboarding Checklist](./checklists/offboarding-checklist.md)

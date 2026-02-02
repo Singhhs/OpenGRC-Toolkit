@@ -2,35 +2,41 @@
 
 Ready-to-use checklists for audits, assessments, and implementation tracking.
 
-## Available Checklists (4)
+## Available Checklists (10)
 
 ### ISO 27001
 
 | Checklist | Purpose | Status |
 |-----------|---------|--------|
 | [ISO 27001 Implementation Checklist](./iso27001-implementation-checklist.md) | Track ISMS implementation progress | Available |
+| [ISO 27001 Internal Audit Checklist](./iso27001-audit-checklist.md) | Conduct internal audits | Available |
+| [Pre-Certification Readiness Checklist](./pre-certification-checklist.md) | Verify readiness before certification audit | **NEW** |
 
-### General Security
+### Vendor & Third Party
+
+| Checklist | Purpose | Status |
+|-----------|---------|--------|
+| [Vendor Security Assessment Checklist](./vendor-security-checklist.md) | Evaluate vendor security posture | **NEW** |
+
+### Technical Security
 
 | Checklist | Purpose | Status |
 |-----------|---------|--------|
 | [Security Baseline Checklist](./security-baseline-checklist.md) | Verify basic security controls | Available |
+| [Cloud Security Checklist](./cloud-security-checklist.md) | Cloud deployment security review | **NEW** |
+| [Server Hardening Checklist](./server-hardening-checklist.md) | Server security configuration | **NEW** |
+| [Network Security Checklist](./network-security-checklist.md) | Network security controls | **NEW** |
+
+### HR & Operations
+
+| Checklist | Purpose | Status |
+|-----------|---------|--------|
 | [New Employee Security Checklist](./new-employee-checklist.md) | Onboarding security tasks | Available |
 | [Offboarding Checklist](./offboarding-checklist.md) | Termination security tasks | Available |
 
 ---
 
 ## Planned Checklists (To Do)
-
-### ISO 27001
-
-| Checklist | Purpose | Priority |
-|-----------|---------|----------|
-| ISO 27001 Internal Audit Checklist | Conduct internal audits | High |
-| ISO 27001 Annex A Controls Checklist | Verify control implementation | High |
-| Pre-Certification Checklist | Readiness check before audit | High |
-| Management Review Checklist | Prepare for management reviews | Medium |
-| Documentation Checklist | Verify required documentation | Medium |
 
 ### Incident Response
 
@@ -40,24 +46,13 @@ Ready-to-use checklists for audits, assessments, and implementation tracking.
 | Data Breach Response Checklist | Breach-specific actions | High |
 | Post-Incident Review Checklist | Lessons learned process | Medium |
 
-### Vendor & Third Party
-
-| Checklist | Purpose | Priority |
-|-----------|---------|----------|
-| Vendor Security Assessment Checklist | Evaluate vendor security | High |
-| Third-Party Access Checklist | Vendor access requirements | Medium |
-| Cloud Service Assessment Checklist | Evaluate cloud providers | Medium |
-
 ### Technical
 
 | Checklist | Purpose | Priority |
 |-----------|---------|----------|
-| Server Hardening Checklist | Server security configuration | Medium |
 | Workstation Security Checklist | Endpoint security configuration | Medium |
-| Cloud Security Checklist | Cloud deployment security | Medium |
-| Network Security Checklist | Network security controls | Medium |
-| Database Security Checklist | Database security configuration | Low |
-| Web Application Security Checklist | Web app security review | Low |
+| Database Security Checklist | Database security configuration | Medium |
+| Web Application Security Checklist | Web app security review | Medium |
 
 ### Operations
 
@@ -66,7 +61,6 @@ Ready-to-use checklists for audits, assessments, and implementation tracking.
 | Change Management Checklist | Pre-change verification | Medium |
 | Backup Verification Checklist | Backup testing | Medium |
 | Disaster Recovery Test Checklist | DR test execution | Medium |
-| Security Patch Checklist | Patch deployment verification | Medium |
 
 ### Compliance
 
@@ -78,13 +72,25 @@ Ready-to-use checklists for audits, assessments, and implementation tracking.
 
 ---
 
+## Checklist Overview
+
+| Category | Available | Description |
+|----------|-----------|-------------|
+| **ISO 27001** | 3 | Implementation, audit, and certification readiness |
+| **Vendor Security** | 1 | Third-party security assessment |
+| **Technical** | 4 | Server, network, cloud, and baseline security |
+| **HR/Operations** | 2 | Onboarding and offboarding |
+
+---
+
 ## How to Use
 
-1. Select the appropriate checklist
-2. Customize for your organization's context
-3. Assign responsibility for each item
-4. Track completion and evidence
-5. Document exceptions
+1. **Select** the appropriate checklist for your task
+2. **Customize** for your organization's specific context
+3. **Assign** responsibility for each item
+4. **Track** completion status and evidence location
+5. **Document** exceptions and rationale
+6. **Review** and update regularly
 
 ---
 
@@ -92,10 +98,41 @@ Ready-to-use checklists for audits, assessments, and implementation tracking.
 
 | Symbol | Meaning |
 |--------|---------|
-| [ ] | Not started |
-| [x] | Completed |
-| [~] | Partially complete |
-| [N/A] | Not applicable |
+| ☐ | Not started / Not checked |
+| ☑ | Completed / Verified |
+| ☐ Partial | Partially complete |
+| ☐ N/A | Not applicable |
+
+---
+
+## Tips for Effective Use
+
+### Before Assessment
+- Review checklist and customize for context
+- Gather documentation and evidence in advance
+- Schedule time with relevant personnel
+- Prepare assessment tools
+
+### During Assessment
+- Document evidence location for each item
+- Note exceptions with justification
+- Capture findings and observations
+- Take screenshots/photos where appropriate
+
+### After Assessment
+- Summarize findings
+- Prioritize remediation items
+- Assign owners and due dates
+- Schedule follow-up verification
+
+---
+
+## Related Resources
+
+- [Internal Audit Procedure](../procedures/internal-audit-procedure.md)
+- [Vendor Security Assessment Procedure](../procedures/vendor-security-assessment-procedure.md)
+- [ISO 27001 Resources](../frameworks/iso-27001/README.md)
+- [Security Policies](../policies/README.md)
 
 ---
 
@@ -104,10 +141,10 @@ Ready-to-use checklists for audits, assessments, and implementation tracking.
 We welcome contributions of new checklists. See [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelines.
 
 Priority areas:
-- ISO 27001 audit checklists
+- Incident response checklists
 - Technical hardening checklists
-- Vendor assessment checklists
+- Compliance checklists (GDPR, SOC 2)
 
 ---
 
-[Back to Home](../README.md)
+[Back to Home](../README.md) | [View Procedures](../procedures/README.md)
