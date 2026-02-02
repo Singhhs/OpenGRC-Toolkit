@@ -6,18 +6,201 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 
 ---
 
+## Project Status
+
+| Metric | Count |
+|--------|-------|
+| Total Documents | 66 |
+| Policies | 14 |
+| Procedures | 7 |
+| Checklists | 5 |
+| Playbooks | 5 |
+| Templates | 11 |
+| Risk Assessment | 5 |
+
+**Current Focus:** ISO 27001:2022 implementation resources
+
+---
+
 ## Quick Navigation
 
-| Category | Description |
-|----------|-------------|
-| [Frameworks](./frameworks/README.md) | Framework-specific guides and mappings (ISO 27001, NIST CSF, SOC 2, GDPR) |
-| [Policies](./policies/README.md) | Ready-to-customize security policy templates |
-| [Procedures](./procedures/README.md) | Step-by-step operational procedures |
-| [Risk Assessment](./risk-assessment/README.md) | Risk assessment templates and methodologies |
-| [Checklists](./checklists/README.md) | Audit and implementation checklists |
-| [Crisis Management](./crisis-management/README.md) | Incident response playbooks and crisis templates |
-| [Templates](./templates/README.md) | General-purpose document templates |
-| [Tools](./tools/README.md) | Scripts and utilities for security operations |
+| Category | Description | Status |
+|----------|-------------|--------|
+| [Frameworks](./frameworks/README.md) | Framework-specific guides and mappings | ISO 27001 active |
+| [Policies](./policies/README.md) | Ready-to-customize security policy templates | 14 policies |
+| [Procedures](./procedures/README.md) | Step-by-step operational procedures | 4 procedures |
+| [Risk Assessment](./risk-assessment/README.md) | Risk assessment templates and methodologies | Available |
+| [Checklists](./checklists/README.md) | Audit and implementation checklists | 4 checklists |
+| [Crisis Management](./crisis-management/README.md) | Incident response playbooks and crisis templates | 3 playbooks |
+| [Templates](./templates/README.md) | General-purpose document templates | 5 templates |
+| [Tools](./tools/README.md) | Scripts and utilities for security operations | Planned |
+
+---
+
+## What's Available
+
+### Policies (14)
+| Policy | ISO 27001 Mapping |
+|--------|-------------------|
+| [Information Security Policy](./policies/information-security-policy.md) | 5.2, A.5.1 |
+| [Access Control Policy](./policies/access-control-policy.md) | A.5.15-A.5.18 |
+| [Acceptable Use Policy](./policies/acceptable-use-policy.md) | A.5.10 |
+| [Data Classification Policy](./policies/data-classification-policy.md) | A.5.12-A.5.13 |
+| [Password Policy](./policies/password-policy.md) | A.5.17 |
+| [Incident Response Policy](./policies/incident-response-policy.md) | A.5.24-A.5.28 |
+| [Business Continuity Policy](./policies/business-continuity-policy.md) | A.5.29-A.5.30 |
+| [Backup Policy](./policies/backup-policy.md) | A.8.13 |
+| [Change Management Policy](./policies/change-management-policy.md) | A.8.32 |
+| [Remote Work Policy](./policies/remote-work-policy.md) | A.6.7 |
+| [Mobile Device Policy](./policies/mobile-device-policy.md) | A.8.1 |
+| [Supplier Security Policy](./policies/supplier-security-policy.md) | A.5.19-A.5.23 |
+| [Vulnerability Management Policy](./policies/vulnerability-management-policy.md) | A.8.8 |
+| [Physical Security Policy](./policies/physical-security-policy.md) | A.7.1-A.7.14 |
+| [Cryptography Policy](./policies/cryptography-policy.md) | A.8.24 |
+
+### Procedures (7)
+- [Incident Response Procedure](./procedures/incident-response-procedure.md)
+- [User Access Request Procedure](./procedures/user-access-request-procedure.md)
+- [Access Review Procedure](./procedures/access-review-procedure.md)
+- [User Offboarding Procedure](./procedures/user-offboarding-procedure.md)
+- [Change Management Procedure](./procedures/change-management-procedure.md)
+- [Backup and Recovery Procedure](./procedures/backup-procedure.md)
+- [Internal Audit Procedure](./procedures/internal-audit-procedure.md)
+
+### Checklists (5)
+- [ISO 27001 Implementation Checklist](./checklists/iso27001-implementation-checklist.md)
+- [ISO 27001 Internal Audit Checklist](./checklists/iso27001-audit-checklist.md)
+- [Security Baseline Checklist](./checklists/security-baseline-checklist.md)
+- [New Employee Onboarding Checklist](./checklists/new-employee-checklist.md)
+- [Offboarding Checklist](./checklists/offboarding-checklist.md)
+
+### Crisis Management
+**Playbooks (5):**
+- [Ransomware Playbook](./crisis-management/playbooks/ransomware-playbook.md)
+- [Data Breach Playbook](./crisis-management/playbooks/data-breach-playbook.md)
+- [Phishing Playbook](./crisis-management/playbooks/phishing-playbook.md)
+- [Lost/Stolen Device Playbook](./crisis-management/playbooks/lost-device-playbook.md)
+- [Insider Threat Playbook](./crisis-management/playbooks/insider-threat-playbook.md)
+
+**Templates:**
+- [Incident Report Template](./crisis-management/templates/incident-report-template.md)
+
+### Risk Assessment
+- [Risk Assessment Methodology](./risk-assessment/methodologies/risk-assessment-methodology.md)
+- [Risk Register Template](./risk-assessment/templates/risk-register-template.md)
+- [Risk Assessment Report Template](./risk-assessment/templates/risk-assessment-template.md)
+- [Asset Inventory Template](./risk-assessment/templates/asset-inventory-template.md)
+
+### ISO 27001 Specific
+- [Statement of Applicability Template](./frameworks/iso-27001/statement-of-applicability.md)
+- [All 93 Annex A Controls Reference](./frameworks/iso-27001/controls/README.md)
+- [Implementation Roadmap](./frameworks/iso-27001/README.md)
+
+### Templates
+- [Vendor Security Questionnaire](./templates/vendor-security-questionnaire.md)
+- [Access Request Form](./templates/access-request-form.md)
+- [Exception Request Form](./templates/exception-request-form.md)
+- [Management Review Agenda](./templates/management-review-agenda.md)
+- [Business Impact Analysis](./templates/business-impact-analysis.md)
+- [Non-Disclosure Agreement (NDA)](./templates/nda-template.md)
+
+---
+
+## What's Missing (Roadmap)
+
+### High Priority - Needed for Complete ISO 27001 Implementation
+
+#### Policies Still Needed
+- [ ] Data Protection/Privacy Policy (GDPR alignment)
+- [ ] Secure Development Policy
+- [ ] Logging and Monitoring Policy
+- [ ] Network Security Policy
+- [ ] Asset Management Policy
+- [ ] Human Resources Security Policy
+- [ ] Clear Desk/Clear Screen Policy (standalone)
+
+#### Procedures Still Needed
+- [ ] Patch Management Procedure
+- [ ] Vendor Security Assessment Procedure
+- [ ] Management Review Procedure
+- [ ] Corrective Action Procedure
+- [ ] Document Control Procedure
+- [ ] Security Awareness Training Procedure
+- [ ] Risk Treatment Procedure
+- [ ] Disaster Recovery Procedure
+
+#### Checklists Still Needed
+- [ ] ISO 27001 Annex A Controls Audit Checklist
+- [ ] Pre-Certification Readiness Checklist
+- [ ] Vendor Security Assessment Checklist
+- [ ] Cloud Security Checklist
+- [ ] Server Hardening Checklist
+- [ ] Network Security Checklist
+
+#### Playbooks Still Needed
+- [ ] DDoS Attack Playbook
+- [ ] Malware Infection Playbook
+- [ ] Account Compromise Playbook
+- [ ] Third-Party Breach Playbook
+
+#### Templates Still Needed
+- [ ] Data Processing Agreement (DPA) Template
+- [ ] Security Metrics Report Template
+- [ ] Internal Audit Report Template
+- [ ] Corrective Action Request Form
+- [ ] Threat Catalog
+- [ ] DPIA Template
+- [ ] Communication Templates (customer notification, press statement)
+
+### Medium Priority - Framework Expansion
+
+#### NIST CSF 2.0
+- [ ] Framework overview and implementation guide
+- [ ] Function/Category/Subcategory mapping
+- [ ] NIST CSF to ISO 27001 control mapping
+- [ ] Self-assessment template
+
+#### SOC 2
+- [ ] Trust Service Criteria overview
+- [ ] Common Criteria (CC) control mapping
+- [ ] SOC 2 readiness checklist
+- [ ] Evidence collection guide
+
+#### GDPR
+- [ ] GDPR requirements overview
+- [ ] Records of Processing Activities (RoPA) template
+- [ ] Data Subject Rights procedures
+- [ ] DPIA methodology
+- [ ] Privacy policy templates
+- [ ] Breach notification templates
+
+### Lower Priority - Enhancements
+
+#### Tools and Automation
+- [ ] Risk calculator spreadsheet
+- [ ] Control mapping matrix (ISO/NIST/SOC2)
+- [ ] Asset inventory CSV template
+- [ ] Policy acknowledgment tracker
+
+#### Additional Resources
+- [ ] Security awareness training materials
+- [ ] Executive presentation templates
+- [ ] Board reporting templates
+- [ ] Compliance dashboard examples
+
+---
+
+## Framework Coverage
+
+| Framework | Status | Progress | Documentation |
+|-----------|--------|----------|---------------|
+| ISO 27001:2022 | Active | ~75% | [View](./frameworks/iso-27001/README.md) |
+| NIST CSF 2.0 | Planned | 5% | [View](./frameworks/nist-csf/README.md) |
+| SOC 2 | Planned | 5% | [View](./frameworks/soc2/README.md) |
+| GDPR | Planned | 5% | [View](./frameworks/gdpr/README.md) |
+| PCI DSS | Not Started | 0% | - |
+| HIPAA | Not Started | 0% | - |
+| CIS Controls | Not Started | 0% | - |
 
 ---
 
@@ -37,17 +220,6 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 1. Review the [Crisis Management](./crisis-management/README.md) section
 2. Adapt the [Incident Response Playbooks](./crisis-management/playbooks/README.md)
 3. Prepare your [Communication Templates](./crisis-management/templates/README.md)
-
----
-
-## Framework Coverage
-
-| Framework | Status | Documentation |
-|-----------|--------|---------------|
-| ISO 27001:2022 | In Progress | [View](./frameworks/iso-27001/README.md) |
-| NIST CSF 2.0 | Planned | [View](./frameworks/nist-csf/README.md) |
-| SOC 2 | Planned | [View](./frameworks/soc2/README.md) |
-| GDPR | Planned | [View](./frameworks/gdpr/README.md) |
 
 ---
 
@@ -78,6 +250,7 @@ Use the checklists to track implementation progress and ensure completeness.
 | Procedures | `[topic]-procedure.md` | `incident-response-procedure.md` |
 | Templates | `[type]-template.md` | `risk-register-template.md` |
 | Checklists | `[topic]-checklist.md` | `iso27001-audit-checklist.md` |
+| Playbooks | `[topic]-playbook.md` | `ransomware-playbook.md` |
 
 ---
 
@@ -85,12 +258,19 @@ Use the checklists to track implementation progress and ensure completeness.
 
 We welcome contributions from the security community. See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
+### Priority Contributions Needed
+1. **Procedures** - Most needed to complete ISO 27001 coverage
+2. **Playbooks** - Additional incident response scenarios
+3. **NIST CSF content** - Framework documentation and mappings
+4. **Translations** - Non-English versions of documents
+
 ### Ways to Contribute
 - Submit new templates or policies
 - Improve existing documentation
 - Add framework mappings
 - Report issues or suggest enhancements
 - Translate documents to other languages
+- Share real-world lessons learned (anonymized)
 
 ---
 
@@ -120,6 +300,14 @@ If you find this toolkit useful:
 - Share it with colleagues
 - Contribute improvements
 - Report issues
+
+---
+
+## Changelog
+
+| Date | Changes |
+|------|---------|
+| 2024-XX-XX | Initial release with 57 documents |
 
 ---
 

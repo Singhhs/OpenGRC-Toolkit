@@ -2,47 +2,114 @@
 
 This section contains step-by-step operational procedures that implement the requirements defined in policies.
 
-## Procedure Library
+## Available Procedures (7)
 
 ### Access Management
 
-| Procedure | Related Policy |
-|-----------|----------------|
-| [User Access Request Procedure](./user-access-request-procedure.md) | [Access Control Policy](../policies/access-control-policy.md) |
-| [Access Review Procedure](./access-review-procedure.md) | [Access Control Policy](../policies/access-control-policy.md) |
-| [User Offboarding Procedure](./user-offboarding-procedure.md) | [Access Control Policy](../policies/access-control-policy.md) |
-| [Password Reset Procedure](./password-reset-procedure.md) | [Password Policy](../policies/password-policy.md) |
+| Procedure | Related Policy | Status |
+|-----------|----------------|--------|
+| [User Access Request Procedure](./user-access-request-procedure.md) | [Access Control Policy](../policies/access-control-policy.md) | Available |
+| [Access Review Procedure](./access-review-procedure.md) | [Access Control Policy](../policies/access-control-policy.md) | Available |
+| [User Offboarding Procedure](./user-offboarding-procedure.md) | [Access Control Policy](../policies/access-control-policy.md) | Available |
 
 ### Incident Management
 
-| Procedure | Related Policy |
-|-----------|----------------|
-| [Incident Response Procedure](./incident-response-procedure.md) | [Incident Response Policy](../policies/incident-response-policy.md) |
-| [Incident Reporting Procedure](./incident-reporting-procedure.md) | [Incident Response Policy](../policies/incident-response-policy.md) |
-| [Forensics Procedure](./forensics-procedure.md) | [Incident Response Policy](../policies/incident-response-policy.md) |
-
-### Data Management
-
-| Procedure | Related Policy |
-|-----------|----------------|
-| [Data Handling Procedure](./data-handling-procedure.md) | [Data Classification Policy](../policies/data-classification-policy.md) |
-| [Data Backup Procedure](./data-backup-procedure.md) | [Backup Policy](../policies/backup-policy.md) |
-| [Data Disposal Procedure](./data-disposal-procedure.md) | [Data Classification Policy](../policies/data-classification-policy.md) |
+| Procedure | Related Policy | Status |
+|-----------|----------------|--------|
+| [Incident Response Procedure](./incident-response-procedure.md) | [Incident Response Policy](../policies/incident-response-policy.md) | Available |
 
 ### Change & Operations
 
-| Procedure | Related Policy |
-|-----------|----------------|
-| [Change Management Procedure](./change-management-procedure.md) | [Change Management Policy](../policies/change-management-policy.md) |
-| [Patch Management Procedure](./patch-management-procedure.md) | [Vulnerability Management Policy](../policies/vulnerability-management-policy.md) |
-| [Vulnerability Scanning Procedure](./vulnerability-scanning-procedure.md) | [Vulnerability Management Policy](../policies/vulnerability-management-policy.md) |
+| Procedure | Related Policy | Status |
+|-----------|----------------|--------|
+| [Change Management Procedure](./change-management-procedure.md) | [Change Management Policy](../policies/change-management-policy.md) | Available |
+| [Backup and Recovery Procedure](./backup-procedure.md) | [Backup Policy](../policies/backup-policy.md) | Available |
 
-### Third Party & Physical
+### ISMS Operations
 
-| Procedure | Related Policy |
-|-----------|----------------|
-| [Vendor Security Assessment Procedure](./vendor-security-assessment-procedure.md) | [Supplier Security Policy](../policies/supplier-security-policy.md) |
-| [Visitor Management Procedure](./visitor-management-procedure.md) | [Physical Security Policy](../policies/physical-security-policy.md) |
+| Procedure | Related Policy | Status |
+|-----------|----------------|--------|
+| [Internal Audit Procedure](./internal-audit-procedure.md) | [Information Security Policy](../policies/information-security-policy.md) | Available |
+
+---
+
+## Planned Procedures (To Do)
+
+### Access Management
+
+| Procedure | Related Policy | Priority |
+|-----------|----------------|----------|
+| Password Reset Procedure | Password Policy | High |
+| Privileged Access Procedure | Access Control Policy | High |
+| Third-Party Access Procedure | Supplier Security Policy | Medium |
+
+### Incident Management
+
+| Procedure | Related Policy | Priority |
+|-----------|----------------|----------|
+| Incident Reporting Procedure | Incident Response Policy | Medium |
+| Forensics Procedure | Incident Response Policy | Low |
+| Evidence Collection Procedure | Incident Response Policy | Low |
+
+### Data Management
+
+| Procedure | Related Policy | Priority |
+|-----------|----------------|----------|
+| Data Backup Procedure | Backup Policy | High |
+| Data Recovery Procedure | Backup Policy | High |
+| Data Disposal Procedure | Data Classification Policy | Medium |
+| Data Handling Procedure | Data Classification Policy | Medium |
+
+### Change & Operations
+
+| Procedure | Related Policy | Priority |
+|-----------|----------------|----------|
+| Change Management Procedure | Change Management Policy | High |
+| Patch Management Procedure | Vulnerability Management Policy | High |
+| Vulnerability Scanning Procedure | Vulnerability Management Policy | Medium |
+| Configuration Management Procedure | Change Management Policy | Medium |
+
+### Third Party & Vendor
+
+| Procedure | Related Policy | Priority |
+|-----------|----------------|----------|
+| Vendor Security Assessment Procedure | Supplier Security Policy | High |
+| Vendor Onboarding Procedure | Supplier Security Policy | Medium |
+
+### Physical Security
+
+| Procedure | Related Policy | Priority |
+|-----------|----------------|----------|
+| Visitor Management Procedure | Physical Security Policy | Medium |
+| Equipment Disposal Procedure | Physical Security Policy | Medium |
+
+### ISMS Operations
+
+| Procedure | Related Policy | Priority |
+|-----------|----------------|----------|
+| Internal Audit Procedure | Information Security Policy | High |
+| Management Review Procedure | Information Security Policy | High |
+| Corrective Action Procedure | Information Security Policy | High |
+| Document Control Procedure | Information Security Policy | Medium |
+| Risk Assessment Procedure | Information Security Policy | High |
+| Risk Treatment Procedure | Information Security Policy | High |
+| Security Awareness Procedure | Information Security Policy | Medium |
+
+### Business Continuity
+
+| Procedure | Related Policy | Priority |
+|-----------|----------------|----------|
+| Disaster Recovery Procedure | Business Continuity Policy | High |
+| Business Continuity Testing Procedure | Business Continuity Policy | Medium |
+
+### Cryptography
+
+| Procedure | Related Policy | Priority |
+|-----------|----------------|----------|
+| Key Management Procedure | Cryptography Policy | High |
+| Certificate Management Procedure | Cryptography Policy | Medium |
+
+---
 
 ## Procedure Template
 
@@ -73,6 +140,8 @@ How to handle special cases
 Links to policies and other procedures
 ```
 
+---
+
 ## Difference: Policies vs. Procedures
 
 | Aspect | Policy | Procedure |
@@ -83,6 +152,12 @@ Links to policies and other procedures
 | Change Frequency | Less frequent | More frequent |
 | Approval | Executive/Board | Management |
 | Example | "Access must be removed immediately upon termination" | "Step 1: HR sends termination notice... Step 2: IT disables account..." |
+
+---
+
+## Contributing
+
+Procedures are the most needed contribution area. See [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelines on submitting new procedures.
 
 ---
 
