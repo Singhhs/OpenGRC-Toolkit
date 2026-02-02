@@ -10,15 +10,16 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 
 | Metric | Count |
 |--------|-------|
-| Total Documents | 66 |
-| Policies | 14 |
+| **Total Documents** | **73** |
+| Policies | 21 |
 | Procedures | 7 |
 | Checklists | 5 |
 | Playbooks | 5 |
 | Templates | 11 |
 | Risk Assessment | 5 |
+| ISO 27001 Controls | 93 |
 
-**Current Focus:** ISO 27001:2022 implementation resources
+**Current Focus:** ISO 27001:2022 implementation resources - **Policy set complete!**
 
 ---
 
@@ -27,19 +28,21 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 | Category | Description | Status |
 |----------|-------------|--------|
 | [Frameworks](./frameworks/README.md) | Framework-specific guides and mappings | ISO 27001 active |
-| [Policies](./policies/README.md) | Ready-to-customize security policy templates | 14 policies |
-| [Procedures](./procedures/README.md) | Step-by-step operational procedures | 4 procedures |
+| [Policies](./policies/README.md) | Ready-to-customize security policy templates | **21 policies (complete)** |
+| [Procedures](./procedures/README.md) | Step-by-step operational procedures | 7 procedures |
 | [Risk Assessment](./risk-assessment/README.md) | Risk assessment templates and methodologies | Available |
-| [Checklists](./checklists/README.md) | Audit and implementation checklists | 4 checklists |
-| [Crisis Management](./crisis-management/README.md) | Incident response playbooks and crisis templates | 3 playbooks |
-| [Templates](./templates/README.md) | General-purpose document templates | 5 templates |
+| [Checklists](./checklists/README.md) | Audit and implementation checklists | 5 checklists |
+| [Crisis Management](./crisis-management/README.md) | Incident response playbooks and crisis templates | 5 playbooks |
+| [Templates](./templates/README.md) | General-purpose document templates | 6 templates |
 | [Tools](./tools/README.md) | Scripts and utilities for security operations | Planned |
 
 ---
 
 ## What's Available
 
-### Policies (14)
+### Policies (21) - Complete ISO 27001 Coverage
+
+#### Core ISMS Policies (Critical)
 | Policy | ISO 27001 Mapping |
 |--------|-------------------|
 | [Information Security Policy](./policies/information-security-policy.md) | 5.2, A.5.1 |
@@ -47,16 +50,39 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 | [Acceptable Use Policy](./policies/acceptable-use-policy.md) | A.5.10 |
 | [Data Classification Policy](./policies/data-classification-policy.md) | A.5.12-A.5.13 |
 | [Password Policy](./policies/password-policy.md) | A.5.17 |
+
+#### Operational Policies (Critical)
+| Policy | ISO 27001 Mapping |
+|--------|-------------------|
 | [Incident Response Policy](./policies/incident-response-policy.md) | A.5.24-A.5.28 |
 | [Business Continuity Policy](./policies/business-continuity-policy.md) | A.5.29-A.5.30 |
 | [Backup Policy](./policies/backup-policy.md) | A.8.13 |
 | [Change Management Policy](./policies/change-management-policy.md) | A.8.32 |
+| [Vulnerability Management Policy](./policies/vulnerability-management-policy.md) | A.8.8 |
+
+#### People & Physical Policies
+| Policy | ISO 27001 Mapping |
+|--------|-------------------|
+| [Human Resources Security Policy](./policies/human-resources-security-policy.md) | A.6.1-A.6.6 |
 | [Remote Work Policy](./policies/remote-work-policy.md) | A.6.7 |
 | [Mobile Device Policy](./policies/mobile-device-policy.md) | A.8.1 |
-| [Supplier Security Policy](./policies/supplier-security-policy.md) | A.5.19-A.5.23 |
-| [Vulnerability Management Policy](./policies/vulnerability-management-policy.md) | A.8.8 |
 | [Physical Security Policy](./policies/physical-security-policy.md) | A.7.1-A.7.14 |
+
+#### Asset & Data Policies
+| Policy | ISO 27001 Mapping |
+|--------|-------------------|
+| [Asset Management Policy](./policies/asset-management-policy.md) | A.5.9-A.5.11 |
+| [Data Protection Policy](./policies/data-protection-policy.md) | A.5.34 |
+| [Information Transfer Policy](./policies/information-transfer-policy.md) | A.5.14 |
+
+#### Technical Policies
+| Policy | ISO 27001 Mapping |
+|--------|-------------------|
+| [Supplier Security Policy](./policies/supplier-security-policy.md) | A.5.19-A.5.23 |
 | [Cryptography Policy](./policies/cryptography-policy.md) | A.8.24 |
+| [Secure Development Policy](./policies/secure-development-policy.md) | A.8.25-A.8.31 |
+| [Logging and Monitoring Policy](./policies/logging-monitoring-policy.md) | A.8.15-A.8.16 |
+| [Network Security Policy](./policies/network-security-policy.md) | A.8.20-A.8.22 |
 
 ### Procedures (7)
 - [Incident Response Procedure](./procedures/incident-response-procedure.md)
@@ -108,16 +134,7 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 
 ## What's Missing (Roadmap)
 
-### High Priority - Needed for Complete ISO 27001 Implementation
-
-#### Policies Still Needed
-- [ ] Data Protection/Privacy Policy (GDPR alignment)
-- [ ] Secure Development Policy
-- [ ] Logging and Monitoring Policy
-- [ ] Network Security Policy
-- [ ] Asset Management Policy
-- [ ] Human Resources Security Policy
-- [ ] Clear Desk/Clear Screen Policy (standalone)
+### High Priority - Complete ISO 27001 Implementation
 
 #### Procedures Still Needed
 - [ ] Patch Management Procedure
@@ -128,9 +145,9 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 - [ ] Security Awareness Training Procedure
 - [ ] Risk Treatment Procedure
 - [ ] Disaster Recovery Procedure
+- [ ] Data Subject Request Procedure (GDPR)
 
 #### Checklists Still Needed
-- [ ] ISO 27001 Annex A Controls Audit Checklist
 - [ ] Pre-Certification Readiness Checklist
 - [ ] Vendor Security Assessment Checklist
 - [ ] Cloud Security Checklist
@@ -194,10 +211,10 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 
 | Framework | Status | Progress | Documentation |
 |-----------|--------|----------|---------------|
-| ISO 27001:2022 | Active | ~75% | [View](./frameworks/iso-27001/README.md) |
+| ISO 27001:2022 | **Active** | **90%** | [View](./frameworks/iso-27001/README.md) |
 | NIST CSF 2.0 | Planned | 5% | [View](./frameworks/nist-csf/README.md) |
 | SOC 2 | Planned | 5% | [View](./frameworks/soc2/README.md) |
-| GDPR | Planned | 5% | [View](./frameworks/gdpr/README.md) |
+| GDPR | Planned | 10% | [View](./frameworks/gdpr/README.md) |
 | PCI DSS | Not Started | 0% | - |
 | HIPAA | Not Started | 0% | - |
 | CIS Controls | Not Started | 0% | - |
@@ -307,6 +324,7 @@ If you find this toolkit useful:
 
 | Date | Changes |
 |------|---------|
+| 2024-XX-XX | Policy set completed: 21 policies with full ISO 27001 coverage |
 | 2024-XX-XX | Initial release with 57 documents |
 
 ---

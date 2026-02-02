@@ -2,58 +2,102 @@
 
 This section contains ready-to-customize information security policy templates.
 
-## Available Policies (14)
+## Available Policies (21) - Complete ISO 27001 Coverage
 
-### Core Policies
-
-| Policy | Description | ISO 27001 | Status |
-|--------|-------------|-----------|--------|
-| [Information Security Policy](./information-security-policy.md) | Top-level security policy | 5.2, A.5.1 | Available |
-| [Acceptable Use Policy](./acceptable-use-policy.md) | Rules for system and data use | A.5.10 | Available |
-| [Access Control Policy](./access-control-policy.md) | Access management principles | A.5.15-A.5.18 | Available |
-| [Data Classification Policy](./data-classification-policy.md) | Information labeling and handling | A.5.12-A.5.13 | Available |
-| [Password Policy](./password-policy.md) | Authentication requirements | A.5.17 | Available |
-
-### Operational Policies
-
-| Policy | Description | ISO 27001 | Status |
-|--------|-------------|-----------|--------|
-| [Incident Response Policy](./incident-response-policy.md) | Security incident handling | A.5.24-A.5.28 | Available |
-| [Business Continuity Policy](./business-continuity-policy.md) | Continuity and disaster recovery | A.5.29-A.5.30 | Available |
-| [Backup Policy](./backup-policy.md) | Data backup requirements | A.8.13 | Available |
-| [Change Management Policy](./change-management-policy.md) | Change control process | A.8.32 | Available |
-| [Vulnerability Management Policy](./vulnerability-management-policy.md) | Vulnerability handling | A.8.8 | Available |
-
-### People & Physical
-
-| Policy | Description | ISO 27001 | Status |
-|--------|-------------|-----------|--------|
-| [Remote Work Policy](./remote-work-policy.md) | Teleworking security | A.6.7 | Available |
-| [Mobile Device Policy](./mobile-device-policy.md) | BYOD and mobile security | A.8.1 | Available |
-| [Physical Security Policy](./physical-security-policy.md) | Facility security | A.7.1-A.7.14 | Available |
-
-### Compliance & Technical
-
-| Policy | Description | ISO 27001 | Status |
-|--------|-------------|-----------|--------|
-| [Supplier Security Policy](./supplier-security-policy.md) | Third-party management | A.5.19-A.5.23 | Available |
-| [Cryptography Policy](./cryptography-policy.md) | Encryption standards | A.8.24 | Available |
-
----
-
-## Planned Policies (To Do)
+### Core ISMS Policies (Priority 1 - Required)
 
 | Policy | Description | ISO 27001 | Priority |
 |--------|-------------|-----------|----------|
-| Data Protection/Privacy Policy | Privacy and personal data (GDPR) | A.5.34 | High |
-| Secure Development Policy | Secure SDLC requirements | A.8.25-A.8.31 | High |
-| Asset Management Policy | Asset lifecycle management | A.5.9-A.5.11 | High |
-| Logging and Monitoring Policy | Security monitoring | A.8.15-A.8.16 | Medium |
-| Network Security Policy | Network protection | A.8.20-A.8.22 | Medium |
-| Human Resources Security Policy | HR security controls | A.6.1-A.6.6 | Medium |
-| Clear Desk Policy | Workspace security (standalone) | A.7.7 | Low |
-| Email Security Policy | Email use and protection | A.5.14 | Low |
-| Cloud Security Policy | Cloud services security | A.5.23 | Medium |
+| [Information Security Policy](./information-security-policy.md) | Top-level security policy | 5.2, A.5.1 | **Critical** |
+| [Acceptable Use Policy](./acceptable-use-policy.md) | Rules for system and data use | A.5.10 | **Critical** |
+| [Access Control Policy](./access-control-policy.md) | Access management principles | A.5.15-A.5.18 | **Critical** |
+| [Data Classification Policy](./data-classification-policy.md) | Information labeling and handling | A.5.12-A.5.13 | **Critical** |
+| [Password Policy](./password-policy.md) | Authentication requirements | A.5.17 | **Critical** |
+
+### Operational Security Policies (Priority 1 - Required)
+
+| Policy | Description | ISO 27001 | Priority |
+|--------|-------------|-----------|----------|
+| [Incident Response Policy](./incident-response-policy.md) | Security incident handling | A.5.24-A.5.28 | **Critical** |
+| [Business Continuity Policy](./business-continuity-policy.md) | Continuity and disaster recovery | A.5.29-A.5.30 | **Critical** |
+| [Backup Policy](./backup-policy.md) | Data backup requirements | A.8.13 | **Critical** |
+| [Change Management Policy](./change-management-policy.md) | Change control process | A.8.32 | **Critical** |
+| [Vulnerability Management Policy](./vulnerability-management-policy.md) | Vulnerability handling | A.8.8 | **Critical** |
+
+### People & Physical Security Policies (Priority 1-2)
+
+| Policy | Description | ISO 27001 | Priority |
+|--------|-------------|-----------|----------|
+| [Human Resources Security Policy](./human-resources-security-policy.md) | HR security controls | A.6.1-A.6.6 | **Critical** |
+| [Remote Work Policy](./remote-work-policy.md) | Teleworking security | A.6.7 | High |
+| [Mobile Device Policy](./mobile-device-policy.md) | BYOD and mobile security | A.8.1 | High |
+| [Physical Security Policy](./physical-security-policy.md) | Facility security | A.7.1-A.7.14 | **Critical** |
+
+### Asset & Data Policies (Priority 1)
+
+| Policy | Description | ISO 27001 | Priority |
+|--------|-------------|-----------|----------|
+| [Asset Management Policy](./asset-management-policy.md) | Asset lifecycle management | A.5.9-A.5.11 | **Critical** |
+| [Data Protection Policy](./data-protection-policy.md) | Privacy and personal data (GDPR) | A.5.34 | **Critical** |
+| [Information Transfer Policy](./information-transfer-policy.md) | Secure information exchange | A.5.14 | High |
+
+### Technical Security Policies (Priority 1-2)
+
+| Policy | Description | ISO 27001 | Priority |
+|--------|-------------|-----------|----------|
+| [Supplier Security Policy](./supplier-security-policy.md) | Third-party management | A.5.19-A.5.23 | **Critical** |
+| [Cryptography Policy](./cryptography-policy.md) | Encryption standards | A.8.24 | **Critical** |
+| [Secure Development Policy](./secure-development-policy.md) | Secure SDLC requirements | A.8.25-A.8.31 | High |
+| [Logging and Monitoring Policy](./logging-monitoring-policy.md) | Security monitoring | A.8.15-A.8.16 | High |
+| [Network Security Policy](./network-security-policy.md) | Network protection | A.8.20-A.8.22 | High |
+
+---
+
+## ISO 27001 Priority Guide
+
+| Priority | Description | When to Implement |
+|----------|-------------|-------------------|
+| **Critical** | Must-have for certification | Phase 1: Foundation |
+| **High** | Important for full compliance | Phase 2: Build-out |
+| **Medium** | Enhances security posture | Phase 3: Maturity |
+
+### Phase 1: Foundation (Critical - 14 Policies)
+These policies are required for ISO 27001 certification:
+1. Information Security Policy
+2. Acceptable Use Policy
+3. Access Control Policy
+4. Data Classification Policy
+5. Password Policy
+6. Incident Response Policy
+7. Business Continuity Policy
+8. Backup Policy
+9. Change Management Policy
+10. Vulnerability Management Policy
+11. Human Resources Security Policy
+12. Physical Security Policy
+13. Asset Management Policy
+14. Data Protection Policy
+15. Supplier Security Policy
+16. Cryptography Policy
+
+### Phase 2: Build-out (High - 5 Policies)
+These policies complete ISO 27001 coverage:
+1. Remote Work Policy
+2. Mobile Device Policy
+3. Information Transfer Policy
+4. Secure Development Policy
+5. Logging and Monitoring Policy
+6. Network Security Policy
+
+---
+
+## Optional/Additional Policies (Not Yet Included)
+
+| Policy | Description | ISO 27001 | Use Case |
+|--------|-------------|-----------|----------|
+| Clear Desk Policy | Workspace security | A.7.7 | Can be section of Physical Security |
+| Cloud Security Policy | Cloud services security | A.5.23 | Covered in Supplier Security |
+| Email Security Policy | Email use and protection | - | Covered in Acceptable Use |
 
 ---
 
@@ -128,25 +172,32 @@ Each policy includes:
 
 ---
 
-## ISO 27001 Policy Coverage
+## Complete ISO 27001 Control Coverage
 
 | ISO 27001 Area | Covered By |
 |----------------|------------|
 | 5.2 Information Security Policy | Information Security Policy |
 | A.5.1 Policies for information security | Information Security Policy |
+| A.5.9-11 Asset management | Asset Management Policy |
 | A.5.10 Acceptable use | Acceptable Use Policy |
 | A.5.12-13 Classification & labeling | Data Classification Policy |
+| A.5.14 Information transfer | Information Transfer Policy |
 | A.5.15-18 Access control | Access Control Policy |
 | A.5.17 Authentication | Password Policy |
 | A.5.19-23 Supplier security | Supplier Security Policy |
 | A.5.24-28 Incident management | Incident Response Policy |
 | A.5.29-30 Business continuity | Business Continuity Policy |
+| A.5.34 Privacy & PII protection | Data Protection Policy |
+| A.6.1-6 People security | Human Resources Security Policy |
 | A.6.7 Remote working | Remote Work Policy |
 | A.7.1-14 Physical security | Physical Security Policy |
 | A.8.1 User endpoint devices | Mobile Device Policy |
 | A.8.8 Vulnerability management | Vulnerability Management Policy |
 | A.8.13 Backup | Backup Policy |
+| A.8.15-16 Logging & monitoring | Logging and Monitoring Policy |
+| A.8.20-22 Network security | Network Security Policy |
 | A.8.24 Cryptography | Cryptography Policy |
+| A.8.25-31 Secure development | Secure Development Policy |
 | A.8.32 Change management | Change Management Policy |
 
 ---
