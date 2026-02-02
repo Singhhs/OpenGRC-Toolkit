@@ -10,9 +10,9 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 
 | Metric | Count |
 |--------|-------|
-| **Total Documents** | **73** |
+| **Total Documents** | **75** |
 | Policies | 21 |
-| Procedures | 7 |
+| Procedures | 7 + 4 ISO-specific |
 | Checklists | 5 |
 | Playbooks | 5 |
 | Templates | 11 |

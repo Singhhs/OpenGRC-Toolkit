@@ -128,6 +128,34 @@ ISO 27001:2022 contains **93 controls** organized into **4 themes**:
 | A.8.33 | Test information | Protect test data |
 | A.8.34 | Protection of information systems during audit testing | Protect during audits |
 
+## Control to Policy Mapping
+
+| Controls | Covered By Policy |
+|----------|-------------------|
+| A.5.1 | [Information Security Policy](../../../policies/information-security-policy.md) |
+| A.5.9-A.5.11 | [Asset Management Policy](../../../policies/asset-management-policy.md) |
+| A.5.10 | [Acceptable Use Policy](../../../policies/acceptable-use-policy.md) |
+| A.5.12-A.5.13 | [Data Classification Policy](../../../policies/data-classification-policy.md) |
+| A.5.14 | [Information Transfer Policy](../../../policies/information-transfer-policy.md) |
+| A.5.15-A.5.18 | [Access Control Policy](../../../policies/access-control-policy.md), [Password Policy](../../../policies/password-policy.md) |
+| A.5.19-A.5.23 | [Supplier Security Policy](../../../policies/supplier-security-policy.md) |
+| A.5.24-A.5.28 | [Incident Response Policy](../../../policies/incident-response-policy.md) |
+| A.5.29-A.5.30 | [Business Continuity Policy](../../../policies/business-continuity-policy.md) |
+| A.5.34 | [Data Protection Policy](../../../policies/data-protection-policy.md) |
+| A.6.1-A.6.6 | [Human Resources Security Policy](../../../policies/human-resources-security-policy.md) |
+| A.6.7 | [Remote Work Policy](../../../policies/remote-work-policy.md) |
+| A.7.1-A.7.14 | [Physical Security Policy](../../../policies/physical-security-policy.md) |
+| A.8.1 | [Mobile Device Policy](../../../policies/mobile-device-policy.md) |
+| A.8.8 | [Vulnerability Management Policy](../../../policies/vulnerability-management-policy.md) |
+| A.8.13 | [Backup Policy](../../../policies/backup-policy.md) |
+| A.8.15-A.8.16 | [Logging and Monitoring Policy](../../../policies/logging-monitoring-policy.md) |
+| A.8.20-A.8.22 | [Network Security Policy](../../../policies/network-security-policy.md) |
+| A.8.24 | [Cryptography Policy](../../../policies/cryptography-policy.md) |
+| A.8.25-A.8.31 | [Secure Development Policy](../../../policies/secure-development-policy.md) |
+| A.8.32 | [Change Management Policy](../../../policies/change-management-policy.md) |
+
+---
+
 ## New Controls in 2022 Version
 
 These controls are new in ISO 27001:2022:
