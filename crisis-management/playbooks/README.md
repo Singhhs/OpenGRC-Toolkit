@@ -2,7 +2,7 @@
 
 Step-by-step guides for responding to specific incident types.
 
-## Available Playbooks (11)
+## Available Playbooks (13)
 
 ### Core Incident Playbooks
 
@@ -20,6 +20,8 @@ Step-by-step guides for responding to specific incident types.
 |----------|----------|----------|
 | [DDoS Attack](./ddos-playbook.md) | Volumetric, protocol, and application layer attacks | High |
 | [Third-Party Breach](./third-party-breach-playbook.md) | Vendor, supplier, or supply chain incident | High |
+| [Website Defacement](./website-defacement-playbook.md) | Public website compromise, content injection | Medium |
+| [Cloud Security Incident](./cloud-security-incident-playbook.md) | Cloud credential compromise, misconfiguration exploitation | High |
 
 ### Physical & Human-Focused Playbooks
 
@@ -36,9 +38,7 @@ Step-by-step guides for responding to specific incident types.
 
 | Playbook | Scenario | Priority |
 |----------|----------|----------|
-| Website Defacement | Public website compromise | Medium |
 | Cryptojacking | Unauthorized cryptocurrency mining | Low |
-| Cloud Security Incident | Cloud-specific breach or misconfiguration | Medium |
 | IoT/OT Compromise | Industrial control or IoT device incident | Low |
 
 ---
@@ -98,8 +98,7 @@ Each playbook follows a consistent structure:
 We welcome contributions of new playbooks. See [CONTRIBUTING.md](../../CONTRIBUTING.md) for guidelines.
 
 Priority playbooks needed:
-- Website Defacement
-- Cloud Security Incident
+- Cryptojacking
 - IoT/OT Compromise
 
 ---

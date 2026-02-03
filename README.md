@@ -10,16 +10,17 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 
 | Metric | Count |
 |--------|-------|
-| **Total Documents** | **107** |
+| **Total Documents** | **117** |
 | Policies | 21 |
-| Procedures | 12 + 5 ISO-specific |
+| Procedures | 19 (12 general + 6 ISO + 1 GDPR) |
 | Checklists | 10 |
-| Playbooks | 11 |
+| Playbooks | 13 |
 | Templates | 11 general + 10 crisis |
 | Risk Assessment | 6 |
 | ISO 27001 Controls | 93 |
+| GDPR Resources | 7 |
 
-**Current Focus:** ISO 27001:2022 implementation resources - **Policy set complete!**
+**Current Focus:** GDPR framework expansion - **Now active with comprehensive resources!**
 
 ---
 
@@ -27,12 +28,12 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 
 | Category | Description | Status |
 |----------|-------------|--------|
-| [Frameworks](./frameworks/README.md) | Framework-specific guides and mappings | ISO 27001 active |
+| [Frameworks](./frameworks/README.md) | Framework-specific guides and mappings | ISO 27001 + GDPR active |
 | [Policies](./policies/README.md) | Ready-to-customize security policy templates | **21 policies (complete)** |
-| [Procedures](./procedures/README.md) | Step-by-step operational procedures | **17 procedures** |
+| [Procedures](./procedures/README.md) | Step-by-step operational procedures | **19 procedures** |
 | [Risk Assessment](./risk-assessment/README.md) | Risk assessment templates and methodologies | Available |
 | [Checklists](./checklists/README.md) | Audit and implementation checklists | **10 checklists** |
-| [Crisis Management](./crisis-management/README.md) | Incident response playbooks and crisis templates | **11 playbooks** |
+| [Crisis Management](./crisis-management/README.md) | Incident response playbooks and crisis templates | **13 playbooks** |
 | [Templates](./templates/README.md) | General-purpose document templates | **21 templates** |
 | [Tools](./tools/README.md) | Scripts and utilities for security operations | Planned |
 
@@ -84,7 +85,7 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 | [Logging and Monitoring Policy](./policies/logging-monitoring-policy.md) | A.8.15-A.8.16 |
 | [Network Security Policy](./policies/network-security-policy.md) | A.8.20-A.8.22 |
 
-### Procedures (17)
+### Procedures (19)
 
 **General Procedures (12):**
 - [Incident Response Procedure](./procedures/incident-response-procedure.md)
@@ -100,12 +101,15 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 - [Data Subject Request Procedure](./procedures/data-subject-request-procedure.md) *(new)*
 - [Security Awareness Procedure](./procedures/security-awareness-procedure.md) *(new)*
 
-**ISO 27001 Specific Procedures (5):**
-- [Management Review Procedure](./frameworks/iso-27001/procedures/management-review-procedure.md) *(new)*
-- [Corrective Action Procedure](./frameworks/iso-27001/procedures/corrective-action-procedure.md) *(new)*
-- [Risk Treatment Procedure](./frameworks/iso-27001/procedures/risk-treatment-procedure.md) *(new)*
+**ISO 27001 Specific Procedures (6):**
+- [Management Review Procedure](./frameworks/iso-27001/procedures/management-review-procedure.md)
+- [Corrective Action Procedure](./frameworks/iso-27001/procedures/corrective-action-procedure.md)
+- [Risk Treatment Procedure](./frameworks/iso-27001/procedures/risk-treatment-procedure.md)
 - [Document Control Procedure](./frameworks/iso-27001/procedures/document-control-procedure.md)
 - [Risk Assessment Procedure](./frameworks/iso-27001/procedures/risk-assessment-procedure.md)
+
+**GDPR Specific Procedure:**
+- [GDPR Breach Notification Procedure](./frameworks/gdpr/breach-notification-procedure.md)
 
 ### Checklists (10)
 - [ISO 27001 Implementation Checklist](./checklists/iso27001-implementation-checklist.md)
@@ -120,24 +124,26 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 - [Offboarding Checklist](./checklists/offboarding-checklist.md)
 
 ### Crisis Management
-**Playbooks (11):**
+**Playbooks (13):**
 
 Core Playbooks:
 - [Ransomware Playbook](./crisis-management/playbooks/ransomware-playbook.md)
 - [Data Breach Playbook](./crisis-management/playbooks/data-breach-playbook.md)
 - [Phishing Playbook](./crisis-management/playbooks/phishing-playbook.md)
-- [Malware Playbook](./crisis-management/playbooks/malware-playbook.md) *(new)*
-- [Account Compromise Playbook](./crisis-management/playbooks/account-compromise-playbook.md) *(new)*
+- [Malware Playbook](./crisis-management/playbooks/malware-playbook.md)
+- [Account Compromise Playbook](./crisis-management/playbooks/account-compromise-playbook.md)
 
 Infrastructure & Third-Party:
-- [DDoS Attack Playbook](./crisis-management/playbooks/ddos-playbook.md) *(new)*
-- [Third-Party Breach Playbook](./crisis-management/playbooks/third-party-breach-playbook.md) *(new)*
+- [DDoS Attack Playbook](./crisis-management/playbooks/ddos-playbook.md)
+- [Third-Party Breach Playbook](./crisis-management/playbooks/third-party-breach-playbook.md)
+- [Website Defacement Playbook](./crisis-management/playbooks/website-defacement-playbook.md)
+- [Cloud Security Incident Playbook](./crisis-management/playbooks/cloud-security-incident-playbook.md)
 
 Physical & Human:
 - [Lost/Stolen Device Playbook](./crisis-management/playbooks/lost-device-playbook.md)
 - [Insider Threat Playbook](./crisis-management/playbooks/insider-threat-playbook.md)
-- [Social Engineering Playbook](./crisis-management/playbooks/social-engineering-playbook.md) *(new)*
-- [Physical Security Playbook](./crisis-management/playbooks/physical-security-playbook.md) *(new)*
+- [Social Engineering Playbook](./crisis-management/playbooks/social-engineering-playbook.md)
+- [Physical Security Playbook](./crisis-management/playbooks/physical-security-playbook.md)
 
 **Templates:**
 - [Incident Report Template](./crisis-management/templates/incident-report-template.md)
@@ -152,6 +158,15 @@ Physical & Human:
 - [Statement of Applicability Template](./frameworks/iso-27001/statement-of-applicability.md)
 - [All 93 Annex A Controls Reference](./frameworks/iso-27001/controls/README.md)
 - [Implementation Roadmap](./frameworks/iso-27001/README.md)
+
+### GDPR Resources
+- [GDPR Requirements Guide](./frameworks/gdpr/gdpr-requirements-guide.md)
+- [Records of Processing Activities (RoPA)](./frameworks/gdpr/ropa-template.md)
+- [Privacy Notice Template](./frameworks/gdpr/privacy-notice-template.md)
+- [Cookie Policy Template](./frameworks/gdpr/cookie-policy-template.md)
+- [Lawful Basis Assessment Guide](./frameworks/gdpr/lawful-basis-guide.md)
+- [International Transfers Guide](./frameworks/gdpr/international-transfers-guide.md)
+- [GDPR Breach Notification Procedure](./frameworks/gdpr/breach-notification-procedure.md)
 
 ### Templates
 - [Vendor Security Questionnaire](./templates/vendor-security-questionnaire.md)
@@ -172,7 +187,7 @@ Physical & Human:
 - [x] ~~Vendor Security Assessment Procedure~~ ✓ Complete
 - [x] ~~Management Review Procedure~~ ✓ Complete (ISO-specific)
 - [x] ~~Corrective Action Procedure~~ ✓ Complete (ISO-specific)
-- [ ] Document Control Procedure
+- [x] ~~Document Control Procedure~~ ✓ Complete (ISO-specific)
 - [x] ~~Security Awareness Training Procedure~~ ✓ Complete
 - [x] ~~Risk Treatment Procedure~~ ✓ Complete (ISO-specific)
 - [x] ~~Disaster Recovery Procedure~~ ✓ Complete
@@ -190,8 +205,8 @@ Physical & Human:
 - [x] ~~Malware Infection Playbook~~ ✓ Complete
 - [x] ~~Account Compromise Playbook~~ ✓ Complete
 - [x] ~~Third-Party Breach Playbook~~ ✓ Complete
-- [ ] Website Defacement Playbook
-- [ ] Cloud Security Incident Playbook
+- [x] ~~Website Defacement Playbook~~ ✓ Complete
+- [x] ~~Cloud Security Incident Playbook~~ ✓ Complete
 
 #### Templates Still Needed
 - [x] ~~Data Processing Agreement (DPA) Template~~ ✓ Complete
@@ -217,12 +232,15 @@ Physical & Human:
 - [ ] Evidence collection guide
 
 #### GDPR
-- [ ] GDPR requirements overview
-- [ ] Records of Processing Activities (RoPA) template
-- [ ] Data Subject Rights procedures
-- [ ] DPIA methodology
-- [ ] Privacy policy templates
-- [ ] Breach notification templates
+- [x] ~~GDPR requirements overview~~ ✓ Complete
+- [x] ~~Records of Processing Activities (RoPA) template~~ ✓ Complete
+- [x] ~~Data Subject Rights procedures~~ ✓ Complete
+- [x] ~~DPIA methodology~~ ✓ Complete
+- [x] ~~Privacy policy templates~~ ✓ Complete
+- [x] ~~Breach notification templates~~ ✓ Complete
+- [x] ~~Lawful basis guide~~ ✓ Complete
+- [x] ~~International transfers guide~~ ✓ Complete
+- [x] ~~Cookie policy template~~ ✓ Complete
 
 ### Lower Priority - Enhancements
 
@@ -244,10 +262,10 @@ Physical & Human:
 
 | Framework | Status | Progress | Documentation |
 |-----------|--------|----------|---------------|
-| ISO 27001:2022 | **Active** | **95%** | [View](./frameworks/iso-27001/README.md) |
+| ISO 27001:2022 | **Active** | **98%** | [View](./frameworks/iso-27001/README.md) |
+| GDPR | **Active** | **80%** | [View](./frameworks/gdpr/README.md) |
 | NIST CSF 2.0 | Planned | 5% | [View](./frameworks/nist-csf/README.md) |
 | SOC 2 | Planned | 5% | [View](./frameworks/soc2/README.md) |
-| GDPR | Planned | 10% | [View](./frameworks/gdpr/README.md) |
 | PCI DSS | Not Started | 0% | - |
 | HIPAA | Not Started | 0% | - |
 | CIS Controls | Not Started | 0% | - |
@@ -270,6 +288,12 @@ Physical & Human:
 1. Review the [Crisis Management](./crisis-management/README.md) section
 2. Adapt the [Incident Response Playbooks](./crisis-management/playbooks/README.md)
 3. Prepare your [Communication Templates](./crisis-management/templates/README.md)
+
+### For Privacy/DPO Teams
+1. Start with the [GDPR Requirements Guide](./frameworks/gdpr/gdpr-requirements-guide.md)
+2. Create your [Records of Processing Activities](./frameworks/gdpr/ropa-template.md)
+3. Implement the [Data Subject Request Procedure](./procedures/data-subject-request-procedure.md)
+4. Use the [DPIA Template](./templates/dpia-template.md) for high-risk processing
 
 ---
 
@@ -311,7 +335,7 @@ We welcome contributions from the security community. See [CONTRIBUTING.md](./CO
 ### Priority Contributions Needed
 1. **NIST CSF 2.0 content** - Framework documentation and control mappings
 2. **SOC 2 content** - Trust Service Criteria documentation
-3. **Additional Playbooks** - Website defacement, cloud security incidents
+3. **Additional Playbooks** - Cryptojacking, IoT/OT Compromise
 4. **Translations** - Non-English versions of documents
 
 ### Ways to Contribute
@@ -357,8 +381,9 @@ If you find this toolkit useful:
 
 | Date | Changes |
 |------|---------|
+| 2024-XX-XX | **GDPR Framework**: 7 new resources (requirements guide, RoPA, privacy notice, lawful basis guide, international transfers, cookie policy, breach notification) |
+| 2024-XX-XX | Playbooks expanded: 13 incident response playbooks (added Website Defacement, Cloud Security) |
 | 2024-XX-XX | Templates expanded: 21 templates (11 general + 10 crisis communication) |
-| 2024-XX-XX | Playbooks expanded: 11 incident response playbooks |
 | 2024-XX-XX | Policy set completed: 21 policies with full ISO 27001 coverage |
 | 2024-XX-XX | Initial release with 57 documents |
 

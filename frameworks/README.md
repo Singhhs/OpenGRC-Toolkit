@@ -6,10 +6,10 @@ This section contains framework-specific resources, mappings, and implementation
 
 | Framework | Description | Status |
 |-----------|-------------|--------|
-| [ISO 27001:2022](./iso-27001/README.md) | International standard for information security management systems | In Progress |
+| [ISO 27001:2022](./iso-27001/README.md) | International standard for information security management systems | **Active (98%)** |
+| [GDPR](./gdpr/README.md) | EU General Data Protection Regulation | **Active (80%)** |
 | [NIST CSF 2.0](./nist-csf/README.md) | Cybersecurity framework for critical infrastructure | Planned |
 | [SOC 2](./soc2/README.md) | Trust service criteria for service organizations | Planned |
-| [GDPR](./gdpr/README.md) | EU General Data Protection Regulation | Planned |
 
 ## Framework Selection Guide
 

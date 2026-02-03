@@ -18,11 +18,111 @@ A comprehensive catalog of information security threats for use in risk assessme
 
 ## How to Use This Catalog
 
-1. **Risk Assessments** - Use as a reference when identifying threats to assets
+1. **Risk Assessments** - Use as a reference when identifying threats to assets and processes
 2. **Threat Modeling** - Apply relevant threats to systems and applications
 3. **Security Planning** - Prioritize controls based on applicable threats
 4. **Awareness Training** - Educate staff about relevant threats
 5. **Incident Preparation** - Develop playbooks for high-priority threats
+
+---
+
+## Business Process Context
+
+**Critical Principle:** Threats should be evaluated in the context of the business processes they could impact. A threat to a system supporting a critical revenue-generating process has different risk implications than the same threat to a non-critical system.
+
+### Why Process Context Matters
+
+- The same technical threat can have vastly different business impacts depending on which processes are affected
+- Recovery priorities should be based on process criticality, not just system importance
+- Control investments should protect the most critical business processes first
+- Incident response priorities depend on understanding which processes are at risk
+
+### Business Impact Analysis (BIA) Integration
+
+**Before using this threat catalog, ensure you have:**
+
+1. **Identified Critical Business Processes**
+   - Revenue-generating processes
+   - Customer-facing processes
+   - Regulatory/compliance processes
+   - Operational support processes
+
+2. **Mapped Systems to Processes**
+   - Which systems support each process?
+   - What are the dependencies between systems?
+   - Which data is required for each process?
+
+3. **Determined Process Criticality**
+   - Recovery Time Objective (RTO) for each process
+   - Recovery Point Objective (RPO) for data
+   - Maximum Tolerable Downtime (MTD)
+   - Financial impact of downtime
+
+### Process-to-System Mapping Template
+
+Use this structure to map your systems to business processes before assessing threats:
+
+| Business Process | Criticality | Supporting Systems | Data Dependencies | RTO | RPO |
+|------------------|-------------|-------------------|-------------------|-----|-----|
+| [Process 1] | Critical | [System A, System B] | [Customer DB, Orders] | 4 hrs | 1 hr |
+| [Process 2] | High | [System C] | [Inventory data] | 24 hrs | 4 hrs |
+| [Process 3] | Medium | [System D, System E] | [Reports, Analytics] | 72 hrs | 24 hrs |
+| [Process 4] | Low | [System F] | [Archives] | 1 week | 1 week |
+
+### Process Criticality Levels
+
+| Level | Definition | Examples | Typical RTO |
+|-------|------------|----------|-------------|
+| **Critical** | Immediate and severe impact to revenue, safety, or legal compliance if unavailable | Payment processing, Emergency services, Trading systems | < 4 hours |
+| **High** | Significant business impact; operations severely degraded | Order management, Customer service, Core manufacturing | 4-24 hours |
+| **Medium** | Moderate impact; business can function with workarounds | Reporting, HR systems, Internal communications | 24-72 hours |
+| **Low** | Minimal immediate impact; inconvenience rather than disruption | Archives, Development environments, Training systems | 72+ hours |
+
+### Contextualizing Threat Impact
+
+When assessing threats from this catalog against your organization:
+
+**Step 1:** Identify which systems could be affected by the threat
+
+**Step 2:** Map those systems to business processes using your BIA
+
+**Step 3:** Adjust the impact rating based on process criticality:
+
+| Base Impact | Critical Process | High Process | Medium Process | Low Process |
+|-------------|------------------|--------------|----------------|-------------|
+| 5 - Catastrophic | 5 | 5 | 4 | 3 |
+| 4 - Major | 5 | 4 | 3 | 2 |
+| 3 - Moderate | 4 | 3 | 3 | 2 |
+| 2 - Minor | 3 | 2 | 2 | 1 |
+| 1 - Negligible | 2 | 1 | 1 | 1 |
+
+**Example:**
+- Ransomware (Base Impact: 5) affecting a system supporting a **Critical** process = Impact 5
+- Same ransomware affecting a system supporting only **Low** processes = Impact 3
+
+### Process-Based Threat Prioritization
+
+When reviewing threats, consider:
+
+| Question | Implication |
+|----------|-------------|
+| Which of our critical processes could this threat disrupt? | Determines true business impact |
+| How many processes depend on the targeted systems? | Identifies concentration risk |
+| Do we have manual workarounds for affected processes? | Affects actual downtime impact |
+| What's the recovery complexity for affected processes? | Influences RTO achievability |
+| Are there upstream/downstream process dependencies? | Reveals cascade effects |
+
+### Single Points of Failure
+
+Identify systems that are:
+- The sole support for a critical process
+- Required by multiple critical processes
+- Without viable manual workarounds
+- Difficult to recover quickly
+
+These systems warrant elevated threat concern regardless of the base threat rating.
+
+---
 
 ### Threat Rating Scale
 
@@ -925,6 +1025,137 @@ A comprehensive catalog of information security threats for use in risk assessme
 - Nation-state targeting
 - Espionage
 - Critical infrastructure protection
+
+---
+
+## Appendix D: Process-Based Threat Analysis
+
+### Common Business Process Categories
+
+When conducting BIA and mapping threats, consider these common process categories:
+
+#### Revenue-Generating Processes
+
+| Process Type | Typical Systems | Key Threats | Priority |
+|--------------|-----------------|-------------|----------|
+| Sales/Order Processing | CRM, E-commerce, POS | Ransomware, DDoS, Payment fraud | Critical |
+| Service Delivery | Core business applications | All availability threats | Critical |
+| Billing/Invoicing | ERP, Billing systems | BEC, Data manipulation | Critical |
+| Customer Onboarding | CRM, Identity verification | Account fraud, Data breach | High |
+
+#### Customer-Facing Processes
+
+| Process Type | Typical Systems | Key Threats | Priority |
+|--------------|-----------------|-------------|----------|
+| Customer Portal | Web applications, APIs | DDoS, Web attacks, Account takeover | Critical |
+| Customer Support | Ticketing, CRM, Phone systems | Social engineering, Data exposure | High |
+| Communication | Email, Messaging | Phishing, BEC, Spoofing | High |
+
+#### Operational Processes
+
+| Process Type | Typical Systems | Key Threats | Priority |
+|--------------|-----------------|-------------|----------|
+| Manufacturing/Production | OT/ICS, MES, SCADA | OT attacks, Ransomware, Insider | Critical |
+| Supply Chain Management | SCM, Logistics, EDI | Third-party breach, BEC | High |
+| Inventory Management | WMS, ERP | Data manipulation, Ransomware | Medium |
+| Facilities Management | BMS, Access control | Physical threats, IoT attacks | Medium |
+
+#### Support Processes
+
+| Process Type | Typical Systems | Key Threats | Priority |
+|--------------|-----------------|-------------|----------|
+| Human Resources | HRIS, Payroll | Insider threat, Data breach | High |
+| Finance/Accounting | ERP, Banking | BEC, Fraud, Insider | Critical |
+| IT Operations | Infrastructure, Monitoring | All technical threats | High |
+| Legal/Compliance | Document management | Data breach, Insider | Medium |
+
+### Process Dependency Mapping
+
+**Identify dependencies to understand cascade effects:**
+
+```
+[Customer Order Process]
+    ├── Requires: E-commerce Platform
+    │       ├── Requires: Payment Gateway (External)
+    │       ├── Requires: Product Database
+    │       └── Requires: Customer Database
+    ├── Requires: Inventory System
+    │       └── Requires: Warehouse Management
+    ├── Triggers: Fulfillment Process
+    │       ├── Requires: Shipping Integration (External)
+    │       └── Requires: Inventory System
+    └── Triggers: Billing Process
+            ├── Requires: ERP
+            └── Requires: Email System
+```
+
+### Threat-to-Process Impact Matrix
+
+Use this matrix to map which threats most significantly impact each process type:
+
+| Threat | Revenue | Customer-Facing | Operations | Support |
+|--------|---------|-----------------|------------|---------|
+| Ransomware | CRITICAL | CRITICAL | CRITICAL | HIGH |
+| DDoS | CRITICAL | CRITICAL | MEDIUM | LOW |
+| Data Breach | HIGH | CRITICAL | MEDIUM | HIGH |
+| BEC/Fraud | CRITICAL | MEDIUM | MEDIUM | CRITICAL |
+| Insider Threat | HIGH | MEDIUM | HIGH | HIGH |
+| Third-Party Breach | HIGH | HIGH | HIGH | MEDIUM |
+| Phishing | MEDIUM | HIGH | MEDIUM | HIGH |
+| Power/Environmental | HIGH | HIGH | CRITICAL | MEDIUM |
+
+### BIA-Driven Control Prioritization
+
+**Invest in controls based on process criticality:**
+
+| Process Criticality | Control Investment | Recovery Investment |
+|--------------------|-------------------|---------------------|
+| **Critical** | Maximum - Defense in depth, redundancy | Hot standby, automated failover |
+| **High** | High - Multiple control layers | Warm standby, documented recovery |
+| **Medium** | Standard - Baseline controls | Cold standby, backup restoration |
+| **Low** | Basic - Essential controls only | Backup only, extended RTO acceptable |
+
+### Questions for Process Owners
+
+When conducting BIA interviews, ask:
+
+1. **Process Identification**
+   - What does your process do?
+   - Who depends on the output of your process?
+   - Whose output do you depend on?
+
+2. **System Dependencies**
+   - What systems are required to perform this process?
+   - Are there manual workarounds if systems are unavailable?
+   - How long can you operate manually?
+
+3. **Data Dependencies**
+   - What data is required for this process?
+   - How current must the data be?
+   - What happens if data is lost or corrupted?
+
+4. **Impact Assessment**
+   - What happens if this process stops for 1 hour? 4 hours? 1 day? 1 week?
+   - What's the financial impact of downtime?
+   - What's the regulatory/compliance impact?
+   - What's the reputational impact?
+
+5. **Recovery Requirements**
+   - How quickly must this process be restored?
+   - How much data loss is acceptable?
+   - What's the minimum functionality needed?
+
+### Linking BIA Results to Threat Assessment
+
+**Process for integrating BIA with threat analysis:**
+
+1. **Complete BIA first** - Understand process criticality before assessing threats
+2. **Map systems to processes** - Know which systems support which processes
+3. **Identify single points of failure** - Systems without redundancy supporting critical processes
+4. **Apply threat catalog** - Assess each relevant threat against critical systems
+5. **Contextualize impact** - Adjust threat impact based on process criticality
+6. **Prioritize controls** - Invest in protecting critical process dependencies
+7. **Plan recovery** - Ensure recovery capabilities match process RTOs
 
 ---
 
