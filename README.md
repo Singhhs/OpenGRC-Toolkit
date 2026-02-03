@@ -10,13 +10,13 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 
 | Metric | Count |
 |--------|-------|
-| **Total Documents** | **106** |
+| **Total Documents** | **107** |
 | Policies | 21 |
 | Procedures | 12 + 5 ISO-specific |
 | Checklists | 10 |
 | Playbooks | 11 |
 | Templates | 11 general + 10 crisis |
-| Risk Assessment | 5 |
+| Risk Assessment | 6 |
 | ISO 27001 Controls | 93 |
 
 **Current Focus:** ISO 27001:2022 implementation resources - **Policy set complete!**
@@ -198,7 +198,7 @@ Physical & Human:
 - [x] ~~Security Metrics Report Template~~ ✓ Complete
 - [x] ~~Internal Audit Report Template~~ ✓ Complete
 - [x] ~~Corrective Action Request Form~~ ✓ Complete
-- [ ] Threat Catalog
+- [x] ~~Threat Catalog~~ ✓ Complete
 - [x] ~~DPIA Template~~ ✓ Complete
 - [x] ~~Communication Templates~~ ✓ Complete (10 crisis templates added)
 

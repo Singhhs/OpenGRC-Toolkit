@@ -11,6 +11,7 @@ This section provides templates, methodologies, and tools for conducting informa
 
 | Resource | Purpose |
 |----------|---------|
+| [Threat Catalog](./threat-catalog.md) | Comprehensive catalog of security threats |
 | [Risk Register Template](./templates/risk-register-template.md) | Track identified risks |
 | [Risk Assessment Template](./templates/risk-assessment-template.md) | Document assessment findings |
 | [Risk Treatment Plan](./templates/risk-treatment-plan-template.md) | Plan risk responses |
