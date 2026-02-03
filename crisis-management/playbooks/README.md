@@ -2,15 +2,33 @@
 
 Step-by-step guides for responding to specific incident types.
 
-## Available Playbooks (5)
+## Available Playbooks (11)
 
-| Playbook | Scenario | Status |
-|----------|----------|--------|
-| [Ransomware](./ransomware-playbook.md) | Ransomware infection and encryption | Available |
-| [Data Breach](./data-breach-playbook.md) | Unauthorized data access or exfiltration | Available |
-| [Phishing/BEC](./phishing-playbook.md) | Phishing attacks and business email compromise | Available |
-| [Lost/Stolen Device](./lost-device-playbook.md) | Lost or stolen laptops, phones, media | Available |
-| [Insider Threat](./insider-threat-playbook.md) | Malicious or negligent insider activity | Available |
+### Core Incident Playbooks
+
+| Playbook | Scenario | Priority |
+|----------|----------|----------|
+| [Ransomware](./ransomware-playbook.md) | Ransomware infection and encryption | Critical |
+| [Data Breach](./data-breach-playbook.md) | Unauthorized data access or exfiltration | Critical |
+| [Phishing/BEC](./phishing-playbook.md) | Phishing attacks and business email compromise | Critical |
+| [Malware](./malware-playbook.md) | General malware (trojans, worms, spyware, RATs) | High |
+| [Account Compromise](./account-compromise-playbook.md) | Credential theft, account takeover | High |
+
+### Infrastructure & Service Playbooks
+
+| Playbook | Scenario | Priority |
+|----------|----------|----------|
+| [DDoS Attack](./ddos-playbook.md) | Volumetric, protocol, and application layer attacks | High |
+| [Third-Party Breach](./third-party-breach-playbook.md) | Vendor, supplier, or supply chain incident | High |
+
+### Physical & Human-Focused Playbooks
+
+| Playbook | Scenario | Priority |
+|----------|----------|----------|
+| [Lost/Stolen Device](./lost-device-playbook.md) | Lost or stolen laptops, phones, media | High |
+| [Insider Threat](./insider-threat-playbook.md) | Malicious or negligent insider activity | High |
+| [Social Engineering](./social-engineering-playbook.md) | Vishing, pretexting, impersonation, baiting | Medium |
+| [Physical Security](./physical-security-playbook.md) | Unauthorized access, theft, vandalism | Medium |
 
 ---
 
@@ -18,14 +36,10 @@ Step-by-step guides for responding to specific incident types.
 
 | Playbook | Scenario | Priority |
 |----------|----------|----------|
-| DDoS Attack | Distributed denial of service attacks | High |
-| Malware Infection | General malware (non-ransomware) | Medium |
-| Account Compromise | Compromised user credentials | Medium |
-| Third-Party Breach | Vendor or partner security incident | Medium |
-| Website Defacement | Public website compromise | Low |
+| Website Defacement | Public website compromise | Medium |
 | Cryptojacking | Unauthorized cryptocurrency mining | Low |
-| Social Engineering | Voice phishing, pretexting | Low |
-| Physical Security Breach | Unauthorized physical access | Low |
+| Cloud Security Incident | Cloud-specific breach or misconfiguration | Medium |
+| IoT/OT Compromise | Industrial control or IoT device incident | Low |
 
 ---
 
@@ -84,9 +98,9 @@ Each playbook follows a consistent structure:
 We welcome contributions of new playbooks. See [CONTRIBUTING.md](../../CONTRIBUTING.md) for guidelines.
 
 Priority playbooks needed:
-- DDoS Attack
-- Insider Threat
-- Lost/Stolen Device
+- Website Defacement
+- Cloud Security Incident
+- IoT/OT Compromise
 
 ---
 

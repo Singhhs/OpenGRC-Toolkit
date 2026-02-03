@@ -2,7 +2,7 @@
 
 General-purpose document templates for information security management.
 
-## Available Templates (5)
+## Available Templates (11)
 
 ### Forms and Requests
 
@@ -10,24 +10,73 @@ General-purpose document templates for information security management.
 |----------|---------|--------|
 | [Access Request Form](./access-request-form.md) | Request system access | Available |
 | [Exception Request Form](./exception-request-form.md) | Request policy exception | Available |
+| [Corrective Action Form](./corrective-action-form.md) | Document and track corrective actions | Available |
+
+### Agreements
+
+| Template | Purpose | Status |
+|----------|---------|--------|
+| [Non-Disclosure Agreement (NDA)](./nda-template.md) | Confidentiality agreement | Available |
+| [Data Processing Agreement (DPA)](./data-processing-agreement.md) | GDPR data processor terms | Available |
 
 ### Assessments
 
 | Template | Purpose | Status |
 |----------|---------|--------|
 | [Vendor Security Questionnaire](./vendor-security-questionnaire.md) | Evaluate vendor security | Available |
+| [Business Impact Analysis](./business-impact-analysis.md) | BIA documentation | Available |
+| [DPIA Template](./dpia-template.md) | Data protection impact assessment | Available |
 
 ### Reporting
 
 | Template | Purpose | Status |
 |----------|---------|--------|
 | [Management Review Agenda](./management-review-agenda.md) | ISO 27001 management review | Available |
+| [Security Metrics Report](./security-metrics-report.md) | Monthly/quarterly security metrics | Available |
+| [Internal Audit Report](./internal-audit-report.md) | Audit findings documentation | Available |
 
-### Crisis Management
+---
 
-| Template | Purpose | Status |
-|----------|---------|--------|
-| [Incident Report Template](../crisis-management/templates/incident-report-template.md) | Final incident documentation | Available |
+## Crisis Communication Templates (9)
+
+Located in [Crisis Management Templates](../crisis-management/templates/README.md):
+
+### Internal Communication
+
+| Template | Purpose |
+|----------|---------|
+| [Internal Alert](../crisis-management/templates/internal-alert-template.md) | Initial incident notification to teams |
+| [Executive Briefing](../crisis-management/templates/executive-briefing-template.md) | Status update for leadership |
+| [Employee Communication](../crisis-management/templates/employee-communication-template.md) | All-staff notification |
+| [Incident Report](../crisis-management/templates/incident-report-template.md) | Final incident documentation |
+
+### External Communication
+
+| Template | Purpose |
+|----------|---------|
+| [Customer Notification](../crisis-management/templates/customer-notification-template.md) | Notify affected customers |
+| [Regulatory Notification](../crisis-management/templates/regulatory-notification-template.md) | Report to authorities (GDPR, etc.) |
+| [Press Statement](../crisis-management/templates/press-statement-template.md) | Media response |
+| [Partner Notification](../crisis-management/templates/partner-notification-template.md) | Alert business partners |
+
+### Documentation
+
+| Template | Purpose |
+|----------|---------|
+| [Incident Intake Form](../crisis-management/templates/incident-intake-form.md) | Initial incident capture |
+| [Lessons Learned](../crisis-management/templates/lessons-learned-template.md) | Post-incident review |
+
+---
+
+## Risk Assessment Templates (4)
+
+Located in [Risk Assessment Templates](../risk-assessment/templates/README.md):
+
+| Template | Purpose |
+|----------|---------|
+| [Risk Register](../risk-assessment/templates/risk-register-template.md) | Track and manage risks |
+| [Risk Assessment Report](../risk-assessment/templates/risk-assessment-template.md) | Document risk assessments |
+| [Asset Inventory](../risk-assessment/templates/asset-inventory-template.md) | Asset register |
 
 ---
 
@@ -37,7 +86,7 @@ General-purpose document templates for information security management.
 
 | Template | Purpose | Priority |
 |----------|---------|----------|
-| Change Request Form | Request system changes | High |
+| Change Request Form | Request system changes | Medium |
 | Security Assessment Request | Request security review | Medium |
 | Risk Acceptance Form | Document risk acceptance | Medium |
 
@@ -45,8 +94,6 @@ General-purpose document templates for information security management.
 
 | Template | Purpose | Priority |
 |----------|---------|----------|
-| Non-Disclosure Agreement (NDA) | Confidentiality agreement | High |
-| Data Processing Agreement (DPA) | GDPR data processing | High |
 | Acceptable Use Acknowledgment | Policy acceptance | Medium |
 | Third-Party Access Agreement | Vendor access terms | Medium |
 
@@ -55,35 +102,14 @@ General-purpose document templates for information security management.
 | Template | Purpose | Priority |
 |----------|---------|----------|
 | Security Self-Assessment | Departmental self-check | Medium |
-| DPIA Template | Data protection impact assessment | High |
-| Business Impact Analysis | BIA documentation | High |
-| Threat Assessment Template | Threat analysis | Medium |
+| Threat Assessment Template | Threat analysis | Low |
 
 ### Reporting
 
 | Template | Purpose | Priority |
 |----------|---------|----------|
-| Security Metrics Report | Monthly/quarterly security metrics | High |
-| Internal Audit Report | Audit findings documentation | High |
-| Corrective Action Request | CAR form | Medium |
 | Executive Security Brief | Board/executive presentation | Medium |
-
-### Asset Management
-
-| Template | Purpose | Priority |
-|----------|---------|----------|
-| Asset Inventory Template | Asset register | High |
-| Asset Classification Form | Asset classification | Medium |
-
-### Communication
-
-| Template | Purpose | Priority |
-|----------|---------|----------|
-| Customer Breach Notification | Notify affected customers | High |
-| Regulatory Notification | Report to authorities | High |
-| Press Statement Template | Media response | Medium |
-| Internal Security Alert | Employee notifications | Medium |
-| Partner Notification | Alert business partners | Low |
+| Compliance Status Report | Regulatory compliance status | Medium |
 
 ### Other
 
@@ -91,7 +117,6 @@ General-purpose document templates for information security management.
 |----------|---------|----------|
 | Meeting Minutes Template | Security committee meetings | Low |
 | Security Awareness Materials | Training content | Medium |
-| Lessons Learned Template | Post-incident review | Medium |
 | Project Security Checklist | Security in projects | Medium |
 
 ---
@@ -136,10 +161,9 @@ All templates use:
 We welcome contributions of new templates. See [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelines.
 
 Priority templates needed:
-- Business Impact Analysis
-- DPIA Template
-- NDA and DPA agreements
-- Communication templates (breach notification)
+- Executive Security Brief
+- Compliance Status Report
+- Security Awareness Materials
 
 ---
 

@@ -10,12 +10,12 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 
 | Metric | Count |
 |--------|-------|
-| **Total Documents** | **86** |
+| **Total Documents** | **106** |
 | Policies | 21 |
 | Procedures | 12 + 5 ISO-specific |
 | Checklists | 10 |
-| Playbooks | 5 |
-| Templates | 11 |
+| Playbooks | 11 |
+| Templates | 11 general + 10 crisis |
 | Risk Assessment | 5 |
 | ISO 27001 Controls | 93 |
 
@@ -32,8 +32,8 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 | [Procedures](./procedures/README.md) | Step-by-step operational procedures | **17 procedures** |
 | [Risk Assessment](./risk-assessment/README.md) | Risk assessment templates and methodologies | Available |
 | [Checklists](./checklists/README.md) | Audit and implementation checklists | **10 checklists** |
-| [Crisis Management](./crisis-management/README.md) | Incident response playbooks and crisis templates | 5 playbooks |
-| [Templates](./templates/README.md) | General-purpose document templates | 6 templates |
+| [Crisis Management](./crisis-management/README.md) | Incident response playbooks and crisis templates | **11 playbooks** |
+| [Templates](./templates/README.md) | General-purpose document templates | **21 templates** |
 | [Tools](./tools/README.md) | Scripts and utilities for security operations | Planned |
 
 ---
@@ -84,7 +84,9 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 | [Logging and Monitoring Policy](./policies/logging-monitoring-policy.md) | A.8.15-A.8.16 |
 | [Network Security Policy](./policies/network-security-policy.md) | A.8.20-A.8.22 |
 
-### Procedures (7)
+### Procedures (17)
+
+**General Procedures (12):**
 - [Incident Response Procedure](./procedures/incident-response-procedure.md)
 - [User Access Request Procedure](./procedures/user-access-request-procedure.md)
 - [Access Review Procedure](./procedures/access-review-procedure.md)
@@ -92,6 +94,18 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 - [Change Management Procedure](./procedures/change-management-procedure.md)
 - [Backup and Recovery Procedure](./procedures/backup-procedure.md)
 - [Internal Audit Procedure](./procedures/internal-audit-procedure.md)
+- [Patch Management Procedure](./procedures/patch-management-procedure.md) *(new)*
+- [Vendor Security Assessment Procedure](./procedures/vendor-security-assessment-procedure.md) *(new)*
+- [Disaster Recovery Procedure](./procedures/disaster-recovery-procedure.md) *(new)*
+- [Data Subject Request Procedure](./procedures/data-subject-request-procedure.md) *(new)*
+- [Security Awareness Procedure](./procedures/security-awareness-procedure.md) *(new)*
+
+**ISO 27001 Specific Procedures (5):**
+- [Management Review Procedure](./frameworks/iso-27001/procedures/management-review-procedure.md) *(new)*
+- [Corrective Action Procedure](./frameworks/iso-27001/procedures/corrective-action-procedure.md) *(new)*
+- [Risk Treatment Procedure](./frameworks/iso-27001/procedures/risk-treatment-procedure.md) *(new)*
+- [Document Control Procedure](./frameworks/iso-27001/procedures/document-control-procedure.md)
+- [Risk Assessment Procedure](./frameworks/iso-27001/procedures/risk-assessment-procedure.md)
 
 ### Checklists (10)
 - [ISO 27001 Implementation Checklist](./checklists/iso27001-implementation-checklist.md)
@@ -106,12 +120,24 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 - [Offboarding Checklist](./checklists/offboarding-checklist.md)
 
 ### Crisis Management
-**Playbooks (5):**
+**Playbooks (11):**
+
+Core Playbooks:
 - [Ransomware Playbook](./crisis-management/playbooks/ransomware-playbook.md)
 - [Data Breach Playbook](./crisis-management/playbooks/data-breach-playbook.md)
 - [Phishing Playbook](./crisis-management/playbooks/phishing-playbook.md)
+- [Malware Playbook](./crisis-management/playbooks/malware-playbook.md) *(new)*
+- [Account Compromise Playbook](./crisis-management/playbooks/account-compromise-playbook.md) *(new)*
+
+Infrastructure & Third-Party:
+- [DDoS Attack Playbook](./crisis-management/playbooks/ddos-playbook.md) *(new)*
+- [Third-Party Breach Playbook](./crisis-management/playbooks/third-party-breach-playbook.md) *(new)*
+
+Physical & Human:
 - [Lost/Stolen Device Playbook](./crisis-management/playbooks/lost-device-playbook.md)
 - [Insider Threat Playbook](./crisis-management/playbooks/insider-threat-playbook.md)
+- [Social Engineering Playbook](./crisis-management/playbooks/social-engineering-playbook.md) *(new)*
+- [Physical Security Playbook](./crisis-management/playbooks/physical-security-playbook.md) *(new)*
 
 **Templates:**
 - [Incident Report Template](./crisis-management/templates/incident-report-template.md)
@@ -142,37 +168,39 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 ### High Priority - Complete ISO 27001 Implementation
 
 #### Procedures Still Needed
-- [ ] Patch Management Procedure
-- [ ] Vendor Security Assessment Procedure
-- [ ] Management Review Procedure
-- [ ] Corrective Action Procedure
+- [x] ~~Patch Management Procedure~~ ✓ Complete
+- [x] ~~Vendor Security Assessment Procedure~~ ✓ Complete
+- [x] ~~Management Review Procedure~~ ✓ Complete (ISO-specific)
+- [x] ~~Corrective Action Procedure~~ ✓ Complete (ISO-specific)
 - [ ] Document Control Procedure
-- [ ] Security Awareness Training Procedure
-- [ ] Risk Treatment Procedure
-- [ ] Disaster Recovery Procedure
-- [ ] Data Subject Request Procedure (GDPR)
+- [x] ~~Security Awareness Training Procedure~~ ✓ Complete
+- [x] ~~Risk Treatment Procedure~~ ✓ Complete (ISO-specific)
+- [x] ~~Disaster Recovery Procedure~~ ✓ Complete
+- [x] ~~Data Subject Request Procedure (GDPR)~~ ✓ Complete
 
 #### Checklists Still Needed
-- [ ] Pre-Certification Readiness Checklist
-- [ ] Vendor Security Assessment Checklist
-- [ ] Cloud Security Checklist
-- [ ] Server Hardening Checklist
-- [ ] Network Security Checklist
+- [x] ~~Pre-Certification Readiness Checklist~~ ✓ Complete
+- [x] ~~Vendor Security Assessment Checklist~~ ✓ Complete
+- [x] ~~Cloud Security Checklist~~ ✓ Complete
+- [x] ~~Server Hardening Checklist~~ ✓ Complete
+- [x] ~~Network Security Checklist~~ ✓ Complete
 
 #### Playbooks Still Needed
-- [ ] DDoS Attack Playbook
-- [ ] Malware Infection Playbook
-- [ ] Account Compromise Playbook
-- [ ] Third-Party Breach Playbook
+- [x] ~~DDoS Attack Playbook~~ ✓ Complete
+- [x] ~~Malware Infection Playbook~~ ✓ Complete
+- [x] ~~Account Compromise Playbook~~ ✓ Complete
+- [x] ~~Third-Party Breach Playbook~~ ✓ Complete
+- [ ] Website Defacement Playbook
+- [ ] Cloud Security Incident Playbook
 
 #### Templates Still Needed
-- [ ] Data Processing Agreement (DPA) Template
-- [ ] Security Metrics Report Template
-- [ ] Internal Audit Report Template
-- [ ] Corrective Action Request Form
+- [x] ~~Data Processing Agreement (DPA) Template~~ ✓ Complete
+- [x] ~~Security Metrics Report Template~~ ✓ Complete
+- [x] ~~Internal Audit Report Template~~ ✓ Complete
+- [x] ~~Corrective Action Request Form~~ ✓ Complete
 - [ ] Threat Catalog
-- [ ] DPIA Template
-- [ ] Communication Templates (customer notification, press statement)
+- [x] ~~DPIA Template~~ ✓ Complete
+- [x] ~~Communication Templates~~ ✓ Complete (10 crisis templates added)
 
 ### Medium Priority - Framework Expansion
 
@@ -216,7 +244,7 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 
 | Framework | Status | Progress | Documentation |
 |-----------|--------|----------|---------------|
-| ISO 27001:2022 | **Active** | **90%** | [View](./frameworks/iso-27001/README.md) |
+| ISO 27001:2022 | **Active** | **95%** | [View](./frameworks/iso-27001/README.md) |
 | NIST CSF 2.0 | Planned | 5% | [View](./frameworks/nist-csf/README.md) |
 | SOC 2 | Planned | 5% | [View](./frameworks/soc2/README.md) |
 | GDPR | Planned | 10% | [View](./frameworks/gdpr/README.md) |
@@ -281,9 +309,9 @@ Use the checklists to track implementation progress and ensure completeness.
 We welcome contributions from the security community. See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
 ### Priority Contributions Needed
-1. **Procedures** - Most needed to complete ISO 27001 coverage
-2. **Playbooks** - Additional incident response scenarios
-3. **NIST CSF content** - Framework documentation and mappings
+1. **NIST CSF 2.0 content** - Framework documentation and control mappings
+2. **SOC 2 content** - Trust Service Criteria documentation
+3. **Additional Playbooks** - Website defacement, cloud security incidents
 4. **Translations** - Non-English versions of documents
 
 ### Ways to Contribute
@@ -329,6 +357,8 @@ If you find this toolkit useful:
 
 | Date | Changes |
 |------|---------|
+| 2024-XX-XX | Templates expanded: 21 templates (11 general + 10 crisis communication) |
+| 2024-XX-XX | Playbooks expanded: 11 incident response playbooks |
 | 2024-XX-XX | Policy set completed: 21 policies with full ISO 27001 coverage |
 | 2024-XX-XX | Initial release with 57 documents |
 

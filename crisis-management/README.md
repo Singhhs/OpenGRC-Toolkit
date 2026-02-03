@@ -49,17 +49,30 @@ Backup:  [ALTERNATE PHONE / URL]
 PIN:     [IF APPLICABLE]
 ```
 
-## Playbook Index
+## Playbook Index (11 Playbooks)
 
-| Scenario | Playbook |
-|----------|----------|
-| Ransomware | [Ransomware Playbook](./playbooks/ransomware-playbook.md) |
-| Data Breach | [Data Breach Playbook](./playbooks/data-breach-playbook.md) |
-| Phishing/BEC | [Phishing Playbook](./playbooks/phishing-playbook.md) |
-| DDoS Attack | [DDoS Playbook](./playbooks/ddos-playbook.md) |
-| Insider Threat | [Insider Threat Playbook](./playbooks/insider-threat-playbook.md) |
-| Lost/Stolen Device | [Lost Device Playbook](./playbooks/lost-device-playbook.md) |
-| Third-Party Breach | [Third Party Playbook](./playbooks/third-party-breach-playbook.md) |
+### Core Incident Playbooks
+| Scenario | Playbook | Priority |
+|----------|----------|----------|
+| Ransomware | [Ransomware Playbook](./playbooks/ransomware-playbook.md) | Critical |
+| Data Breach | [Data Breach Playbook](./playbooks/data-breach-playbook.md) | Critical |
+| Phishing/BEC | [Phishing Playbook](./playbooks/phishing-playbook.md) | Critical |
+| Malware (non-ransomware) | [Malware Playbook](./playbooks/malware-playbook.md) | High |
+| Account Compromise | [Account Compromise Playbook](./playbooks/account-compromise-playbook.md) | High |
+
+### Infrastructure & Service Playbooks
+| Scenario | Playbook | Priority |
+|----------|----------|----------|
+| DDoS Attack | [DDoS Playbook](./playbooks/ddos-playbook.md) | High |
+| Third-Party Breach | [Third Party Playbook](./playbooks/third-party-breach-playbook.md) | High |
+
+### Physical & Human-Focused Playbooks
+| Scenario | Playbook | Priority |
+|----------|----------|----------|
+| Lost/Stolen Device | [Lost Device Playbook](./playbooks/lost-device-playbook.md) | High |
+| Insider Threat | [Insider Threat Playbook](./playbooks/insider-threat-playbook.md) | High |
+| Social Engineering | [Social Engineering Playbook](./playbooks/social-engineering-playbook.md) | Medium |
+| Physical Security Breach | [Physical Security Playbook](./playbooks/physical-security-playbook.md) | Medium |
 
 ## Communication Templates
 
