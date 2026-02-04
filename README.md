@@ -10,7 +10,7 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 
 | Metric | Count |
 |--------|-------|
-| **Total Documents** | **123** |
+| **Total Documents** | **129** |
 | Policies | 21 |
 | Procedures | 19 (12 general + 6 ISO + 1 GDPR) |
 | Checklists | 10 |
@@ -20,8 +20,9 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 | ISO 27001 Controls | 93 |
 | GDPR Resources | 7 |
 | NIST CSF Resources | 6 |
+| SOC 2 Resources | 6 |
 
-**Current Focus:** Framework expansion - **ISO 27001, GDPR, and NIST CSF now active!**
+**Current Focus:** Framework expansion - **ISO 27001, GDPR, NIST CSF, and SOC 2 now active!**
 
 ---
 
@@ -29,7 +30,7 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 
 | Category | Description | Status |
 |----------|-------------|--------|
-| [Frameworks](./frameworks/README.md) | Framework-specific guides and mappings | ISO 27001 + GDPR + NIST CSF active |
+| [Frameworks](./frameworks/README.md) | Framework-specific guides and mappings | ISO 27001 + GDPR + NIST CSF + SOC 2 active |
 | [Policies](./policies/README.md) | Ready-to-customize security policy templates | **21 policies (complete)** |
 | [Procedures](./procedures/README.md) | Step-by-step operational procedures | **19 procedures** |
 | [Risk Assessment](./risk-assessment/README.md) | Risk assessment templates and methodologies | Available |
@@ -177,6 +178,14 @@ Physical & Human:
 - [CSF Implementation Guide](./frameworks/nist-csf/csf-implementation-guide.md)
 - [NIST CSF to ISO 27001 Mapping](./frameworks/nist-csf/nist-iso27001-mapping.md)
 
+### SOC 2 Resources
+- [SOC 2 Guide](./frameworks/soc2/soc2-guide.md)
+- [Trust Service Criteria Reference](./frameworks/soc2/trust-services-criteria.md)
+- [SOC 2 Readiness Checklist](./frameworks/soc2/soc2-readiness-checklist.md)
+- [SOC 2 Evidence Guide](./frameworks/soc2/soc2-evidence-guide.md)
+- [SOC 2 Gap Assessment](./frameworks/soc2/soc2-gap-assessment.md)
+- [SOC 2 to ISO 27001 Mapping](./frameworks/soc2/soc2-iso27001-mapping.md)
+
 ### Templates
 - [Vendor Security Questionnaire](./templates/vendor-security-questionnaire.md)
 - [Access Request Form](./templates/access-request-form.md)
@@ -237,10 +246,12 @@ Physical & Human:
 - [x] ~~Profile template~~ ✓ Complete
 
 #### SOC 2
-- [ ] Trust Service Criteria overview
-- [ ] Common Criteria (CC) control mapping
-- [ ] SOC 2 readiness checklist
-- [ ] Evidence collection guide
+- [x] ~~Trust Service Criteria overview~~ ✓ Complete
+- [x] ~~Common Criteria (CC) control mapping~~ ✓ Complete
+- [x] ~~SOC 2 readiness checklist~~ ✓ Complete
+- [x] ~~Evidence collection guide~~ ✓ Complete
+- [x] ~~SOC 2 to ISO 27001 mapping~~ ✓ Complete
+- [x] ~~Gap assessment template~~ ✓ Complete
 
 #### GDPR
 - [x] ~~GDPR requirements overview~~ ✓ Complete
@@ -276,7 +287,7 @@ Physical & Human:
 | ISO 27001:2022 | **Active** | **98%** | [View](./frameworks/iso-27001/README.md) |
 | GDPR | **Active** | **80%** | [View](./frameworks/gdpr/README.md) |
 | NIST CSF 2.0 | **Active** | **75%** | [View](./frameworks/nist-csf/README.md) |
-| SOC 2 | Planned | 5% | [View](./frameworks/soc2/README.md) |
+| SOC 2 | **Active** | **80%** | [View](./frameworks/soc2/README.md) |
 | PCI DSS | Not Started | 0% | - |
 | HIPAA | Not Started | 0% | - |
 | CIS Controls | Not Started | 0% | - |
@@ -305,6 +316,12 @@ Physical & Human:
 2. Create your [Records of Processing Activities](./frameworks/gdpr/ropa-template.md)
 3. Implement the [Data Subject Request Procedure](./procedures/data-subject-request-procedure.md)
 4. Use the [DPIA Template](./templates/dpia-template.md) for high-risk processing
+
+### For Service Providers/SaaS Teams
+1. Review the [SOC 2 Guide](./frameworks/soc2/soc2-guide.md) to understand the framework
+2. Complete the [SOC 2 Readiness Checklist](./frameworks/soc2/soc2-readiness-checklist.md)
+3. Perform a [Gap Assessment](./frameworks/soc2/soc2-gap-assessment.md) against Trust Service Criteria
+4. Use the [Evidence Guide](./frameworks/soc2/soc2-evidence-guide.md) to prepare for audit
 
 ---
 
@@ -344,8 +361,8 @@ Use the checklists to track implementation progress and ensure completeness.
 We welcome contributions from the security community. See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
 ### Priority Contributions Needed
-1. **NIST CSF 2.0 content** - Framework documentation and control mappings
-2. **SOC 2 content** - Trust Service Criteria documentation
+1. **PCI DSS content** - Payment Card Industry Data Security Standard
+2. **HIPAA content** - Healthcare information security requirements
 3. **Additional Playbooks** - Cryptojacking, IoT/OT Compromise
 4. **Translations** - Non-English versions of documents
 
@@ -392,6 +409,7 @@ If you find this toolkit useful:
 
 | Date | Changes |
 |------|---------|
+| 2024-XX-XX | **SOC 2 Framework**: 6 new resources (guide, TSC reference, readiness checklist, evidence guide, gap assessment, ISO mapping) |
 | 2024-XX-XX | **NIST CSF 2.0 Framework**: 6 new resources (guide, assessment, profile, tiers, implementation, ISO mapping) |
 | 2024-XX-XX | **GDPR Framework**: 7 new resources (requirements guide, RoPA, privacy notice, lawful basis guide, international transfers, cookie policy, breach notification) |
 | 2024-XX-XX | Playbooks expanded: 13 incident response playbooks (added Website Defacement, Cloud Security) |
