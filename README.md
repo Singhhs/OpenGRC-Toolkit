@@ -10,7 +10,7 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 
 | Metric | Count |
 |--------|-------|
-| **Total Documents** | **117** |
+| **Total Documents** | **123** |
 | Policies | 21 |
 | Procedures | 19 (12 general + 6 ISO + 1 GDPR) |
 | Checklists | 10 |
@@ -19,8 +19,9 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 | Risk Assessment | 6 |
 | ISO 27001 Controls | 93 |
 | GDPR Resources | 7 |
+| NIST CSF Resources | 6 |
 
-**Current Focus:** GDPR framework expansion - **Now active with comprehensive resources!**
+**Current Focus:** Framework expansion - **ISO 27001, GDPR, and NIST CSF now active!**
 
 ---
 
@@ -28,7 +29,7 @@ OpenGRC Toolkit provides ready-to-use templates, policies, procedures, and tools
 
 | Category | Description | Status |
 |----------|-------------|--------|
-| [Frameworks](./frameworks/README.md) | Framework-specific guides and mappings | ISO 27001 + GDPR active |
+| [Frameworks](./frameworks/README.md) | Framework-specific guides and mappings | ISO 27001 + GDPR + NIST CSF active |
 | [Policies](./policies/README.md) | Ready-to-customize security policy templates | **21 policies (complete)** |
 | [Procedures](./procedures/README.md) | Step-by-step operational procedures | **19 procedures** |
 | [Risk Assessment](./risk-assessment/README.md) | Risk assessment templates and methodologies | Available |
@@ -168,6 +169,14 @@ Physical & Human:
 - [International Transfers Guide](./frameworks/gdpr/international-transfers-guide.md)
 - [GDPR Breach Notification Procedure](./frameworks/gdpr/breach-notification-procedure.md)
 
+### NIST CSF 2.0 Resources
+- [NIST CSF 2.0 Guide](./frameworks/nist-csf/nist-csf-guide.md)
+- [CSF Assessment Template](./frameworks/nist-csf/csf-assessment-template.md)
+- [CSF Profile Template](./frameworks/nist-csf/csf-profile-template.md)
+- [Implementation Tiers Guide](./frameworks/nist-csf/implementation-tiers-guide.md)
+- [CSF Implementation Guide](./frameworks/nist-csf/csf-implementation-guide.md)
+- [NIST CSF to ISO 27001 Mapping](./frameworks/nist-csf/nist-iso27001-mapping.md)
+
 ### Templates
 - [Vendor Security Questionnaire](./templates/vendor-security-questionnaire.md)
 - [Access Request Form](./templates/access-request-form.md)
@@ -220,10 +229,12 @@ Physical & Human:
 ### Medium Priority - Framework Expansion
 
 #### NIST CSF 2.0
-- [ ] Framework overview and implementation guide
-- [ ] Function/Category/Subcategory mapping
-- [ ] NIST CSF to ISO 27001 control mapping
-- [ ] Self-assessment template
+- [x] ~~Framework overview and implementation guide~~ ✓ Complete
+- [x] ~~Function/Category/Subcategory mapping~~ ✓ Complete
+- [x] ~~NIST CSF to ISO 27001 control mapping~~ ✓ Complete
+- [x] ~~Self-assessment template~~ ✓ Complete
+- [x] ~~Implementation tiers guide~~ ✓ Complete
+- [x] ~~Profile template~~ ✓ Complete
 
 #### SOC 2
 - [ ] Trust Service Criteria overview
@@ -264,7 +275,7 @@ Physical & Human:
 |-----------|--------|----------|---------------|
 | ISO 27001:2022 | **Active** | **98%** | [View](./frameworks/iso-27001/README.md) |
 | GDPR | **Active** | **80%** | [View](./frameworks/gdpr/README.md) |
-| NIST CSF 2.0 | Planned | 5% | [View](./frameworks/nist-csf/README.md) |
+| NIST CSF 2.0 | **Active** | **75%** | [View](./frameworks/nist-csf/README.md) |
 | SOC 2 | Planned | 5% | [View](./frameworks/soc2/README.md) |
 | PCI DSS | Not Started | 0% | - |
 | HIPAA | Not Started | 0% | - |
@@ -381,6 +392,7 @@ If you find this toolkit useful:
 
 | Date | Changes |
 |------|---------|
+| 2024-XX-XX | **NIST CSF 2.0 Framework**: 6 new resources (guide, assessment, profile, tiers, implementation, ISO mapping) |
 | 2024-XX-XX | **GDPR Framework**: 7 new resources (requirements guide, RoPA, privacy notice, lawful basis guide, international transfers, cookie policy, breach notification) |
 | 2024-XX-XX | Playbooks expanded: 13 incident response playbooks (added Website Defacement, Cloud Security) |
 | 2024-XX-XX | Templates expanded: 21 templates (11 general + 10 crisis communication) |
